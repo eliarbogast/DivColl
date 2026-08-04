@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software or data, please cite the paper below."
+title: "DivColl: code and data for environmental resilience via morphological diversity within machines"
+authors:
+  - family-names: "Hein"
+    given-names: "Alice"
+    affiliation: "University of Vermont"
+  - family-names: "Bongard"
+    given-names: "Josh"
+    affiliation: "University of Vermont"
+license: MIT
+repository-code: "https://github.com/jbongard/DivColl-code"
+preferred-citation:
+  type: article
+  title: "Environmental resilience via morphological diversity within machines"
+  authors:
+    - family-names: "Hein"
+      given-names: "Alice"
+    - family-names: "Bongard"
+      given-names: "Josh"
+  year: 2026
+references:
+  - type: conference-paper
+    title: "Evolution and learning in differentiable robots"
+    authors:
+      - family-names: "Strgar"
+        given-names: "Luke"
+      - family-names: "Matthews"
+        given-names: "David"
+      - family-names: "Hummer"
+        given-names: "Tyler"
+      - family-names: "Kriegman"
+        given-names: "Sam"
+    collection-title: "Proceedings of Robotics: Science and Systems"
+    year: 2024
+    doi: "10.15607/RSS.2024.XX.100"
+    notes: "The differentiable physics simulator used here derives from this work."
