@@ -1,0 +1,19 @@
+[project]
+name = "divcoll"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Eli Arbogast", email = "eliarbogast@gmail.com" }
+]
+requires-python = ">=3.9"
+dependencies = [
+    "pip>=26.0.1",
+]
+
+[project.scripts]
+divcoll = "divcoll:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
