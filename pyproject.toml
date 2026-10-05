@@ -6,9 +6,19 @@ readme = "README.md"
 authors = [
     { name = "Eli Arbogast", email = "eliarbogast@gmail.com" }
 ]
-requires-python = ">=3.9"
+requires-python = ">=3.10.13"
 dependencies = [
+    "ffmpeg>=1.4",
+    "matplotlib==3.8.3",
+    "moviepy==1.0.3",
+    "numpy==1.26.4",
+    "pandas==2.2.3",
     "pip>=26.0.1",
+    "scikit-image==0.22.0",
+    "scipy==1.14.1",
+    "seaborn==0.13.2",
+    "taichi==1.7.2",
+    "tqdm==4.66.1",
 ]
 
 [project.scripts]
