@@ -1,0 +1,1278 @@
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/train_flat_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  iter   0 perf mean 0.0146  min -0.0241  max 0.0946
+  iter  10 perf mean 0.0853  min 0.0202  max 0.3153
+  iter  20 perf mean 0.1024  min 0.0068  max 0.3775
+  iter  30 perf mean 0.1625  min 0.0003  max 0.4635
+  iter  40 perf mean 0.1656  min 0.0445  max 0.4057
+  iter  50 perf mean 0.1615  min 0.0308  max 0.6038
+  iter  60 perf mean 0.2104  min 0.0379  max 0.5990
+trained flat seed 0 in 340s
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.3033
+  disabled (0,)           mean perf 0.0580
+  disabled (1,)           mean perf 0.0168
+  disabled (2,)           mean perf 0.0282
+  disabled (3,)           mean perf 0.1065
+  disabled (0, 1)         mean perf 0.0166
+  disabled (0, 2)         mean perf 0.0026
+  disabled (0, 3)         mean perf 0.0346
+  disabled (1, 2)         mean perf 0.0023
+  disabled (1, 3)         mean perf 0.0018
+  disabled (2, 3)         mean perf 0.0263
+  disabled (0, 1, 2)      mean perf 0.0024
+  disabled (0, 1, 3)      mean perf 0.0018
+  disabled (0, 2, 3)      mean perf 0.0020
+  disabled (1, 2, 3)      mean perf 0.0018
+  disabled (0, 1, 2, 3)   mean perf 0.0019
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.2626
+  disabled (0,)           mean perf 0.1045
+  disabled (1,)           mean perf 0.0628
+  disabled (2,)           mean perf 0.0490
+  disabled (3,)           mean perf 0.1279
+  disabled (0, 1)         mean perf 0.0652
+  disabled (0, 2)         mean perf 0.0154
+  disabled (0, 3)         mean perf 0.0555
+  disabled (1, 2)         mean perf 0.0182
+  disabled (1, 3)         mean perf 0.0193
+  disabled (2, 3)         mean perf 0.0507
+  disabled (0, 1, 2)      mean perf 0.0177
+  disabled (0, 1, 3)      mean perf 0.0185
+  disabled (0, 2, 3)      mean perf 0.0166
+  disabled (1, 2, 3)      mean perf 0.0186
+  disabled (0, 1, 2, 3)   mean perf 0.0179
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.2459
+  disabled (0,)           mean perf 0.0612
+  disabled (1,)           mean perf 0.0166
+  disabled (2,)           mean perf 0.0240
+  disabled (3,)           mean perf 0.0969
+  disabled (0, 1)         mean perf 0.0162
+  disabled (0, 2)         mean perf 0.0029
+  disabled (0, 3)         mean perf 0.0291
+  disabled (1, 2)         mean perf 0.0027
+  disabled (1, 3)         mean perf 0.0022
+  disabled (2, 3)         mean perf 0.0221
+  disabled (0, 1, 2)      mean perf 0.0027
+  disabled (0, 1, 3)      mean perf 0.0022
+  disabled (0, 2, 3)      mean perf 0.0024
+  disabled (1, 2, 3)      mean perf 0.0021
+  disabled (0, 1, 2, 3)   mean perf 0.0022
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.2596
+  disabled (0,)           mean perf 0.0566
+  disabled (1,)           mean perf 0.0167
+  disabled (2,)           mean perf 0.0272
+  disabled (3,)           mean perf 0.0912
+  disabled (0, 1)         mean perf 0.0165
+  disabled (0, 2)         mean perf 0.0025
+  disabled (0, 3)         mean perf 0.0337
+  disabled (1, 2)         mean perf 0.0023
+  disabled (1, 3)         mean perf 0.0017
+  disabled (2, 3)         mean perf 0.0255
+  disabled (0, 1, 2)      mean perf 0.0024
+  disabled (0, 1, 3)      mean perf 0.0017
+  disabled (0, 2, 3)      mean perf 0.0020
+  disabled (1, 2, 3)      mean perf 0.0017
+  disabled (0, 1, 2, 3)   mean perf 0.0018
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env low_gravity...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.0647
+  disabled (0,)           mean perf 0.0362
+  disabled (1,)           mean perf 0.0155
+  disabled (2,)           mean perf 0.0155
+  disabled (3,)           mean perf 0.0543
+  disabled (0, 1)         mean perf 0.0163
+  disabled (0, 2)         mean perf 0.0070
+  disabled (0, 3)         mean perf 0.0321
+  disabled (1, 2)         mean perf 0.0075
+  disabled (1, 3)         mean perf 0.0068
+  disabled (2, 3)         mean perf 0.0156
+  disabled (0, 1, 2)      mean perf 0.0074
+  disabled (0, 1, 3)      mean perf 0.0069
+  disabled (0, 2, 3)      mean perf 0.0074
+  disabled (1, 2, 3)      mean perf 0.0076
+  disabled (0, 1, 2, 3)   mean perf 0.0077
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/train_multi_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  iter   0 perf mean 0.2751  min 0.1284  max 0.3947
+  iter  10 perf mean 0.2966  min 0.1758  max 0.4049
+  iter  20 perf mean 0.1075  min 0.0103  max 0.2422
+  iter  30 perf mean 0.1409  min 0.0037  max 0.2798
+  iter  40 perf mean 0.2209  min 0.1117  max 0.3121
+  iter  50 perf mean 0.3027  min 0.1643  max 0.5310
+  iter  60 perf mean 0.3153  min 0.0742  max 0.5746
+trained multi seed 0 in 178s
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.3001
+  disabled (0,)           mean perf 0.1434
+  disabled (1,)           mean perf 0.1368
+  disabled (2,)           mean perf 0.0571
+  disabled (3,)           mean perf 0.0764
+  disabled (0, 1)         mean perf 0.0745
+  disabled (0, 2)         mean perf 0.0201
+  disabled (0, 3)         mean perf 0.0363
+  disabled (1, 2)         mean perf 0.0165
+  disabled (1, 3)         mean perf 0.0117
+  disabled (2, 3)         mean perf 0.0258
+  disabled (0, 1, 2)      mean perf 0.0040
+  disabled (0, 1, 3)      mean perf 0.0046
+  disabled (0, 2, 3)      mean perf 0.0028
+  disabled (1, 2, 3)      mean perf 0.0033
+  disabled (0, 1, 2, 3)   mean perf 0.0019
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2841
+  disabled (0,)           mean perf 0.1724
+  disabled (1,)           mean perf 0.1768
+  disabled (2,)           mean perf 0.1032
+  disabled (3,)           mean perf 0.1431
+  disabled (0, 1)         mean perf 0.1725
+  disabled (0, 2)         mean perf 0.0284
+  disabled (0, 3)         mean perf 0.0764
+  disabled (1, 2)         mean perf 0.0415
+  disabled (1, 3)         mean perf 0.0400
+  disabled (2, 3)         mean perf 0.0926
+  disabled (0, 1, 2)      mean perf 0.0245
+  disabled (0, 1, 3)      mean perf 0.0240
+  disabled (0, 2, 3)      mean perf 0.0221
+  disabled (1, 2, 3)      mean perf 0.0375
+  disabled (0, 1, 2, 3)   mean perf 0.0179
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2828
+  disabled (0,)           mean perf 0.1542
+  disabled (1,)           mean perf 0.1318
+  disabled (2,)           mean perf 0.0575
+  disabled (3,)           mean perf 0.0839
+  disabled (0, 1)         mean perf 0.0830
+  disabled (0, 2)         mean perf 0.0221
+  disabled (0, 3)         mean perf 0.0416
+  disabled (1, 2)         mean perf 0.0176
+  disabled (1, 3)         mean perf 0.0101
+  disabled (2, 3)         mean perf 0.0361
+  disabled (0, 1, 2)      mean perf 0.0082
+  disabled (0, 1, 3)      mean perf 0.0067
+  disabled (0, 2, 3)      mean perf 0.0037
+  disabled (1, 2, 3)      mean perf 0.0048
+  disabled (0, 1, 2, 3)   mean perf 0.0022
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2664
+  disabled (0,)           mean perf 0.1196
+  disabled (1,)           mean perf 0.1161
+  disabled (2,)           mean perf 0.0510
+  disabled (3,)           mean perf 0.0778
+  disabled (0, 1)         mean perf 0.0635
+  disabled (0, 2)         mean perf 0.0169
+  disabled (0, 3)         mean perf 0.0335
+  disabled (1, 2)         mean perf 0.0163
+  disabled (1, 3)         mean perf 0.0115
+  disabled (2, 3)         mean perf 0.0245
+  disabled (0, 1, 2)      mean perf 0.0039
+  disabled (0, 1, 3)      mean perf 0.0045
+  disabled (0, 2, 3)      mean perf 0.0028
+  disabled (1, 2, 3)      mean perf 0.0033
+  disabled (0, 1, 2, 3)   mean perf 0.0018
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env low_gravity...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.0413
+  disabled (0,)           mean perf 0.0517
+  disabled (1,)           mean perf 0.0354
+  disabled (2,)           mean perf 0.0216
+  disabled (3,)           mean perf 0.0278
+  disabled (0, 1)         mean perf 0.0260
+  disabled (0, 2)         mean perf 0.0209
+  disabled (0, 3)         mean perf 0.0156
+  disabled (1, 2)         mean perf 0.0120
+  disabled (1, 3)         mean perf 0.0072
+  disabled (2, 3)         mean perf 0.0195
+  disabled (0, 1, 2)      mean perf 0.0108
+  disabled (0, 1, 3)      mean perf 0.0077
+  disabled (0, 2, 3)      mean perf 0.0129
+  disabled (1, 2, 3)      mean perf 0.0096
+  disabled (0, 1, 2, 3)   mean perf 0.0077
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/train_multi_comm_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  iter   0 perf mean 0.2749  min 0.1284  max 0.3947
+  iter  10 perf mean 0.2826  min 0.1312  max 0.3411
+  iter  20 perf mean 0.2961  min 0.1812  max 0.4215
+  iter  30 perf mean 0.2189  min 0.0431  max 0.3211
+  iter  40 perf mean 0.1649  min 0.0340  max 0.2951
+  iter  50 perf mean 0.3311  min 0.1565  max 0.4992
+  iter  60 perf mean 0.2749  min 0.1558  max 0.3639
+trained multi_comm seed 0 in 189s
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.3173
+  disabled (0,)           mean perf 0.1259
+  disabled (1,)           mean perf 0.1418
+  disabled (2,)           mean perf 0.0452
+  disabled (3,)           mean perf 0.0923
+  disabled (0, 1)         mean perf 0.0787
+  disabled (0, 2)         mean perf 0.0200
+  disabled (0, 3)         mean perf 0.0265
+  disabled (1, 2)         mean perf 0.0166
+  disabled (1, 3)         mean perf 0.0116
+  disabled (2, 3)         mean perf 0.0367
+  disabled (0, 1, 2)      mean perf 0.0040
+  disabled (0, 1, 3)      mean perf 0.0046
+  disabled (0, 2, 3)      mean perf 0.0028
+  disabled (1, 2, 3)      mean perf 0.0033
+  disabled (0, 1, 2, 3)   mean perf 0.0019
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2655
+  disabled (0,)           mean perf 0.1855
+  disabled (1,)           mean perf 0.1873
+  disabled (2,)           mean perf 0.1073
+  disabled (3,)           mean perf 0.1303
+  disabled (0, 1)         mean perf 0.1676
+  disabled (0, 2)         mean perf 0.0286
+  disabled (0, 3)         mean perf 0.0815
+  disabled (1, 2)         mean perf 0.0418
+  disabled (1, 3)         mean perf 0.0407
+  disabled (2, 3)         mean perf 0.1011
+  disabled (0, 1, 2)      mean perf 0.0246
+  disabled (0, 1, 3)      mean perf 0.0243
+  disabled (0, 2, 3)      mean perf 0.0223
+  disabled (1, 2, 3)      mean perf 0.0377
+  disabled (0, 1, 2, 3)   mean perf 0.0179
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2555
+  disabled (0,)           mean perf 0.1316
+  disabled (1,)           mean perf 0.1235
+  disabled (2,)           mean perf 0.0541
+  disabled (3,)           mean perf 0.0847
+  disabled (0, 1)         mean perf 0.0858
+  disabled (0, 2)         mean perf 0.0222
+  disabled (0, 3)         mean perf 0.0305
+  disabled (1, 2)         mean perf 0.0177
+  disabled (1, 3)         mean perf 0.0101
+  disabled (2, 3)         mean perf 0.0339
+  disabled (0, 1, 2)      mean perf 0.0082
+  disabled (0, 1, 3)      mean perf 0.0067
+  disabled (0, 2, 3)      mean perf 0.0037
+  disabled (1, 2, 3)      mean perf 0.0048
+  disabled (0, 1, 2, 3)   mean perf 0.0022
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2816
+  disabled (0,)           mean perf 0.1047
+  disabled (1,)           mean perf 0.1068
+  disabled (2,)           mean perf 0.0456
+  disabled (3,)           mean perf 0.0876
+  disabled (0, 1)         mean perf 0.0651
+  disabled (0, 2)         mean perf 0.0169
+  disabled (0, 3)         mean perf 0.0250
+  disabled (1, 2)         mean perf 0.0164
+  disabled (1, 3)         mean perf 0.0115
+  disabled (2, 3)         mean perf 0.0364
+  disabled (0, 1, 2)      mean perf 0.0039
+  disabled (0, 1, 3)      mean perf 0.0045
+  disabled (0, 2, 3)      mean perf 0.0027
+  disabled (1, 2, 3)      mean perf 0.0033
+  disabled (0, 1, 2, 3)   mean perf 0.0018
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env low_gravity...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.0455
+  disabled (0,)           mean perf 0.0520
+  disabled (1,)           mean perf 0.0341
+  disabled (2,)           mean perf 0.0308
+  disabled (3,)           mean perf 0.0350
+  disabled (0, 1)         mean perf 0.0380
+  disabled (0, 2)         mean perf 0.0211
+  disabled (0, 3)         mean perf 0.0294
+  disabled (1, 2)         mean perf 0.0118
+  disabled (1, 3)         mean perf 0.0069
+  disabled (2, 3)         mean perf 0.0246
+  disabled (0, 1, 2)      mean perf 0.0108
+  disabled (0, 1, 3)      mean perf 0.0080
+  disabled (0, 2, 3)      mean perf 0.0129
+  disabled (1, 2, 3)      mean perf 0.0094
+  disabled (0, 1, 2, 3)   mean perf 0.0077
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/train_flat_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  iter   0 perf mean 0.0021  min -0.0401  max 0.0326
+  iter  10 perf mean 0.0634  min 0.0280  max 0.1235
+  iter  20 perf mean 0.1468  min 0.0457  max 0.3213
+  iter  30 perf mean 0.1916  min 0.0220  max 0.4201
+  iter  40 perf mean 0.2411  min 0.0143  max 0.4495
+  iter  50 perf mean 0.2789  min 0.0438  max 0.5001
+  iter  60 perf mean 0.3101  min 0.0672  max 0.5076
+trained flat seed 1 in 347s
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.3444
+  disabled (0,)           mean perf 0.0890
+  disabled (1,)           mean perf 0.0109
+  disabled (2,)           mean perf 0.0291
+  disabled (3,)           mean perf 0.0833
+  disabled (0, 1)         mean perf 0.0106
+  disabled (0, 2)         mean perf 0.0021
+  disabled (0, 3)         mean perf 0.0123
+  disabled (1, 2)         mean perf 0.0024
+  disabled (1, 3)         mean perf 0.0023
+  disabled (2, 3)         mean perf 0.0284
+  disabled (0, 1, 2)      mean perf 0.0020
+  disabled (0, 1, 3)      mean perf 0.0018
+  disabled (0, 2, 3)      mean perf 0.0018
+  disabled (1, 2, 3)      mean perf 0.0022
+  disabled (0, 1, 2, 3)   mean perf 0.0018
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.2474
+  disabled (0,)           mean perf 0.1032
+  disabled (1,)           mean perf 0.0540
+  disabled (2,)           mean perf 0.0815
+  disabled (3,)           mean perf 0.1541
+  disabled (0, 1)         mean perf 0.0513
+  disabled (0, 2)         mean perf 0.0184
+  disabled (0, 3)         mean perf 0.0342
+  disabled (1, 2)         mean perf 0.0271
+  disabled (1, 3)         mean perf 0.0275
+  disabled (2, 3)         mean perf 0.0819
+  disabled (0, 1, 2)      mean perf 0.0227
+  disabled (0, 1, 3)      mean perf 0.0218
+  disabled (0, 2, 3)      mean perf 0.0132
+  disabled (1, 2, 3)      mean perf 0.0231
+  disabled (0, 1, 2, 3)   mean perf 0.0176
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.2837
+  disabled (0,)           mean perf 0.0771
+  disabled (1,)           mean perf 0.0121
+  disabled (2,)           mean perf 0.0236
+  disabled (3,)           mean perf 0.1007
+  disabled (0, 1)         mean perf 0.0119
+  disabled (0, 2)         mean perf 0.0023
+  disabled (0, 3)         mean perf 0.0109
+  disabled (1, 2)         mean perf 0.0026
+  disabled (1, 3)         mean perf 0.0025
+  disabled (2, 3)         mean perf 0.0219
+  disabled (0, 1, 2)      mean perf 0.0022
+  disabled (0, 1, 3)      mean perf 0.0020
+  disabled (0, 2, 3)      mean perf 0.0022
+  disabled (1, 2, 3)      mean perf 0.0025
+  disabled (0, 1, 2, 3)   mean perf 0.0021
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.3271
+  disabled (0,)           mean perf 0.0837
+  disabled (1,)           mean perf 0.0107
+  disabled (2,)           mean perf 0.0264
+  disabled (3,)           mean perf 0.0777
+  disabled (0, 1)         mean perf 0.0105
+  disabled (0, 2)         mean perf 0.0020
+  disabled (0, 3)         mean perf 0.0115
+  disabled (1, 2)         mean perf 0.0023
+  disabled (1, 3)         mean perf 0.0022
+  disabled (2, 3)         mean perf 0.0257
+  disabled (0, 1, 2)      mean perf 0.0019
+  disabled (0, 1, 3)      mean perf 0.0017
+  disabled (0, 2, 3)      mean perf 0.0017
+  disabled (1, 2, 3)      mean perf 0.0021
+  disabled (0, 1, 2, 3)   mean perf 0.0017
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env low_gravity...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.0553
+  disabled (0,)           mean perf 0.0384
+  disabled (1,)           mean perf 0.0179
+  disabled (2,)           mean perf 0.0079
+  disabled (3,)           mean perf 0.0393
+  disabled (0, 1)         mean perf 0.0182
+  disabled (0, 2)         mean perf 0.0072
+  disabled (0, 3)         mean perf 0.0171
+  disabled (1, 2)         mean perf 0.0074
+  disabled (1, 3)         mean perf 0.0075
+  disabled (2, 3)         mean perf 0.0074
+  disabled (0, 1, 2)      mean perf 0.0074
+  disabled (0, 1, 3)      mean perf 0.0074
+  disabled (0, 2, 3)      mean perf 0.0073
+  disabled (1, 2, 3)      mean perf 0.0076
+  disabled (0, 1, 2, 3)   mean perf 0.0077
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/train_multi_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  iter   0 perf mean 0.3203  min 0.2300  max 0.4467
+  iter  10 perf mean 0.2361  min 0.1210  max 0.3272
+  iter  20 perf mean 0.1659  min 0.0863  max 0.2700
+  iter  30 perf mean 0.0666  min -0.0757  max 0.1879
+  iter  40 perf mean 0.1752  min 0.0511  max 0.2658
+  iter  50 perf mean 0.2357  min 0.1601  max 0.3427
+  iter  60 perf mean 0.0821  min -0.0439  max 0.2369
+trained multi seed 1 in 180s
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.3031
+  disabled (0,)           mean perf 0.1030
+  disabled (1,)           mean perf 0.1013
+  disabled (2,)           mean perf 0.0481
+  disabled (3,)           mean perf 0.1053
+  disabled (0, 1)         mean perf 0.0607
+  disabled (0, 2)         mean perf 0.0169
+  disabled (0, 3)         mean perf 0.0316
+  disabled (1, 2)         mean perf 0.0115
+  disabled (1, 3)         mean perf 0.0143
+  disabled (2, 3)         mean perf 0.0158
+  disabled (0, 1, 2)      mean perf 0.0033
+  disabled (0, 1, 3)      mean perf 0.0040
+  disabled (0, 2, 3)      mean perf 0.0032
+  disabled (1, 2, 3)      mean perf 0.0036
+  disabled (0, 1, 2, 3)   mean perf 0.0018
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2536
+  disabled (0,)           mean perf 0.1177
+  disabled (1,)           mean perf 0.1711
+  disabled (2,)           mean perf 0.1247
+  disabled (3,)           mean perf 0.1763
+  disabled (0, 1)         mean perf 0.1743
+  disabled (0, 2)         mean perf 0.0399
+  disabled (0, 3)         mean perf 0.0872
+  disabled (1, 2)         mean perf 0.0452
+  disabled (1, 3)         mean perf 0.0475
+  disabled (2, 3)         mean perf 0.1079
+  disabled (0, 1, 2)      mean perf 0.0301
+  disabled (0, 1, 3)      mean perf 0.0326
+  disabled (0, 2, 3)      mean perf 0.0294
+  disabled (1, 2, 3)      mean perf 0.0340
+  disabled (0, 1, 2, 3)   mean perf 0.0176
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2541
+  disabled (0,)           mean perf 0.1120
+  disabled (1,)           mean perf 0.1145
+  disabled (2,)           mean perf 0.0565
+  disabled (3,)           mean perf 0.1053
+  disabled (0, 1)         mean perf 0.0735
+  disabled (0, 2)         mean perf 0.0206
+  disabled (0, 3)         mean perf 0.0351
+  disabled (1, 2)         mean perf 0.0144
+  disabled (1, 3)         mean perf 0.0151
+  disabled (2, 3)         mean perf 0.0202
+  disabled (0, 1, 2)      mean perf 0.0063
+  disabled (0, 1, 3)      mean perf 0.0067
+  disabled (0, 2, 3)      mean perf 0.0048
+  disabled (1, 2, 3)      mean perf 0.0046
+  disabled (0, 1, 2, 3)   mean perf 0.0021
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2695
+  disabled (0,)           mean perf 0.0916
+  disabled (1,)           mean perf 0.0826
+  disabled (2,)           mean perf 0.0473
+  disabled (3,)           mean perf 0.1069
+  disabled (0, 1)         mean perf 0.0450
+  disabled (0, 2)         mean perf 0.0095
+  disabled (0, 3)         mean perf 0.0267
+  disabled (1, 2)         mean perf 0.0101
+  disabled (1, 3)         mean perf 0.0120
+  disabled (2, 3)         mean perf 0.0157
+  disabled (0, 1, 2)      mean perf 0.0032
+  disabled (0, 1, 3)      mean perf 0.0038
+  disabled (0, 2, 3)      mean perf 0.0025
+  disabled (1, 2, 3)      mean perf 0.0033
+  disabled (0, 1, 2, 3)   mean perf 0.0017
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env low_gravity...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.0468
+  disabled (0,)           mean perf 0.0533
+  disabled (1,)           mean perf 0.0467
+  disabled (2,)           mean perf 0.0324
+  disabled (3,)           mean perf 0.0389
+  disabled (0, 1)         mean perf 0.0450
+  disabled (0, 2)         mean perf 0.0164
+  disabled (0, 3)         mean perf 0.0373
+  disabled (1, 2)         mean perf 0.0121
+  disabled (1, 3)         mean perf 0.0104
+  disabled (2, 3)         mean perf 0.0267
+  disabled (0, 1, 2)      mean perf 0.0100
+  disabled (0, 1, 3)      mean perf 0.0101
+  disabled (0, 2, 3)      mean perf 0.0140
+  disabled (1, 2, 3)      mean perf 0.0093
+  disabled (0, 1, 2, 3)   mean perf 0.0077
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/train_multi_comm_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  iter   0 perf mean 0.3203  min 0.2300  max 0.4467
+  iter  10 perf mean 0.2041  min 0.0099  max 0.3137
+  iter  20 perf mean 0.1516  min 0.0595  max 0.2538
+  iter  30 perf mean 0.2247  min 0.1531  max 0.3395
+  iter  40 perf mean 0.2395  min 0.1828  max 0.3017
+  iter  50 perf mean 0.1919  min 0.0607  max 0.3268
+  iter  60 perf mean 0.1797  min 0.0778  max 0.2573
+trained multi_comm seed 1 in 189s
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2819
+  disabled (0,)           mean perf 0.1052
+  disabled (1,)           mean perf 0.0991
+  disabled (2,)           mean perf 0.0482
+  disabled (3,)           mean perf 0.1064
+  disabled (0, 1)         mean perf 0.0569
+  disabled (0, 2)         mean perf 0.0168
+  disabled (0, 3)         mean perf 0.0309
+  disabled (1, 2)         mean perf 0.0115
+  disabled (1, 3)         mean perf 0.0143
+  disabled (2, 3)         mean perf 0.0176
+  disabled (0, 1, 2)      mean perf 0.0033
+  disabled (0, 1, 3)      mean perf 0.0040
+  disabled (0, 2, 3)      mean perf 0.0032
+  disabled (1, 2, 3)      mean perf 0.0036
+  disabled (0, 1, 2, 3)   mean perf 0.0018
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2471
+  disabled (0,)           mean perf 0.1260
+  disabled (1,)           mean perf 0.1763
+  disabled (2,)           mean perf 0.1227
+  disabled (3,)           mean perf 0.1497
+  disabled (0, 1)         mean perf 0.1648
+  disabled (0, 2)         mean perf 0.0400
+  disabled (0, 3)         mean perf 0.0806
+  disabled (1, 2)         mean perf 0.0452
+  disabled (1, 3)         mean perf 0.0476
+  disabled (2, 3)         mean perf 0.1105
+  disabled (0, 1, 2)      mean perf 0.0300
+  disabled (0, 1, 3)      mean perf 0.0327
+  disabled (0, 2, 3)      mean perf 0.0294
+  disabled (1, 2, 3)      mean perf 0.0340
+  disabled (0, 1, 2, 3)   mean perf 0.0176
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2686
+  disabled (0,)           mean perf 0.1103
+  disabled (1,)           mean perf 0.1102
+  disabled (2,)           mean perf 0.0568
+  disabled (3,)           mean perf 0.1124
+  disabled (0, 1)         mean perf 0.0764
+  disabled (0, 2)         mean perf 0.0205
+  disabled (0, 3)         mean perf 0.0335
+  disabled (1, 2)         mean perf 0.0144
+  disabled (1, 3)         mean perf 0.0151
+  disabled (2, 3)         mean perf 0.0208
+  disabled (0, 1, 2)      mean perf 0.0063
+  disabled (0, 1, 3)      mean perf 0.0067
+  disabled (0, 2, 3)      mean perf 0.0048
+  disabled (1, 2, 3)      mean perf 0.0046
+  disabled (0, 1, 2, 3)   mean perf 0.0021
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2661
+  disabled (0,)           mean perf 0.0841
+  disabled (1,)           mean perf 0.0882
+  disabled (2,)           mean perf 0.0467
+  disabled (3,)           mean perf 0.1029
+  disabled (0, 1)         mean perf 0.0469
+  disabled (0, 2)         mean perf 0.0095
+  disabled (0, 3)         mean perf 0.0257
+  disabled (1, 2)         mean perf 0.0101
+  disabled (1, 3)         mean perf 0.0120
+  disabled (2, 3)         mean perf 0.0176
+  disabled (0, 1, 2)      mean perf 0.0032
+  disabled (0, 1, 3)      mean perf 0.0038
+  disabled (0, 2, 3)      mean perf 0.0025
+  disabled (1, 2, 3)      mean perf 0.0033
+  disabled (0, 1, 2, 3)   mean perf 0.0017
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env low_gravity...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.0453
+  disabled (0,)           mean perf 0.0557
+  disabled (1,)           mean perf 0.0468
+  disabled (2,)           mean perf 0.0328
+  disabled (3,)           mean perf 0.0402
+  disabled (0, 1)         mean perf 0.0474
+  disabled (0, 2)         mean perf 0.0162
+  disabled (0, 3)         mean perf 0.0380
+  disabled (1, 2)         mean perf 0.0126
+  disabled (1, 3)         mean perf 0.0106
+  disabled (2, 3)         mean perf 0.0256
+  disabled (0, 1, 2)      mean perf 0.0100
+  disabled (0, 1, 3)      mean perf 0.0101
+  disabled (0, 2, 3)      mean perf 0.0140
+  disabled (1, 2, 3)      mean perf 0.0093
+  disabled (0, 1, 2, 3)   mean perf 0.0077
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/train_flat_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  iter   0 perf mean 0.0053  min -0.0249  max 0.0445
+  iter  10 perf mean 0.0897  min -0.0340  max 0.2438
+  iter  20 perf mean 0.1378  min 0.0249  max 0.3129
+  iter  30 perf mean 0.1310  min 0.0628  max 0.2685
+  iter  40 perf mean 0.1631  min -0.0852  max 0.3765
+  iter  50 perf mean 0.1952  min 0.0301  max 0.3842
+  iter  60 perf mean 0.1781  min 0.0222  max 0.4259
+trained flat seed 2 in 353s
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.2891
+  disabled (0,)           mean perf 0.0767
+  disabled (1,)           mean perf 0.0145
+  disabled (2,)           mean perf 0.0269
+  disabled (3,)           mean perf 0.1023
+  disabled (0, 1)         mean perf 0.0166
+  disabled (0, 2)         mean perf 0.0021
+  disabled (0, 3)         mean perf 0.0115
+  disabled (1, 2)         mean perf 0.0022
+  disabled (1, 3)         mean perf 0.0021
+  disabled (2, 3)         mean perf 0.0259
+  disabled (0, 1, 2)      mean perf 0.0022
+  disabled (0, 1, 3)      mean perf 0.0021
+  disabled (0, 2, 3)      mean perf 0.0018
+  disabled (1, 2, 3)      mean perf 0.0019
+  disabled (0, 1, 2, 3)   mean perf 0.0019
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.1838
+  disabled (0,)           mean perf 0.0411
+  disabled (1,)           mean perf 0.0610
+  disabled (2,)           mean perf 0.0811
+  disabled (3,)           mean perf 0.1493
+  disabled (0, 1)         mean perf 0.0561
+  disabled (0, 2)         mean perf 0.0193
+  disabled (0, 3)         mean perf 0.0412
+  disabled (1, 2)         mean perf 0.0219
+  disabled (1, 3)         mean perf 0.0201
+  disabled (2, 3)         mean perf 0.0813
+  disabled (0, 1, 2)      mean perf 0.0188
+  disabled (0, 1, 3)      mean perf 0.0174
+  disabled (0, 2, 3)      mean perf 0.0159
+  disabled (1, 2, 3)      mean perf 0.0177
+  disabled (0, 1, 2, 3)   mean perf 0.0155
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.2280
+  disabled (0,)           mean perf 0.0524
+  disabled (1,)           mean perf 0.0169
+  disabled (2,)           mean perf 0.0233
+  disabled (3,)           mean perf 0.0801
+  disabled (0, 1)         mean perf 0.0165
+  disabled (0, 2)         mean perf 0.0024
+  disabled (0, 3)         mean perf 0.0114
+  disabled (1, 2)         mean perf 0.0024
+  disabled (1, 3)         mean perf 0.0024
+  disabled (2, 3)         mean perf 0.0216
+  disabled (0, 1, 2)      mean perf 0.0023
+  disabled (0, 1, 3)      mean perf 0.0023
+  disabled (0, 2, 3)      mean perf 0.0022
+  disabled (1, 2, 3)      mean perf 0.0022
+  disabled (0, 1, 2, 3)   mean perf 0.0021
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.2825
+  disabled (0,)           mean perf 0.0755
+  disabled (1,)           mean perf 0.0144
+  disabled (2,)           mean perf 0.0267
+  disabled (3,)           mean perf 0.0994
+  disabled (0, 1)         mean perf 0.0165
+  disabled (0, 2)         mean perf 0.0021
+  disabled (0, 3)         mean perf 0.0098
+  disabled (1, 2)         mean perf 0.0024
+  disabled (1, 3)         mean perf 0.0023
+  disabled (2, 3)         mean perf 0.0259
+  disabled (0, 1, 2)      mean perf 0.0023
+  disabled (0, 1, 3)      mean perf 0.0022
+  disabled (0, 2, 3)      mean perf 0.0018
+  disabled (1, 2, 3)      mean perf 0.0021
+  disabled (0, 1, 2, 3)   mean perf 0.0020
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env low_gravity...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_flat_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  disabled ()             mean perf 0.0569
+  disabled (0,)           mean perf 0.0237
+  disabled (1,)           mean perf 0.0169
+  disabled (2,)           mean perf 0.0098
+  disabled (3,)           mean perf 0.0372
+  disabled (0, 1)         mean perf 0.0164
+  disabled (0, 2)         mean perf 0.0072
+  disabled (0, 3)         mean perf 0.0118
+  disabled (1, 2)         mean perf 0.0077
+  disabled (1, 3)         mean perf 0.0078
+  disabled (2, 3)         mean perf 0.0102
+  disabled (0, 1, 2)      mean perf 0.0076
+  disabled (0, 1, 3)      mean perf 0.0073
+  disabled (0, 2, 3)      mean perf 0.0071
+  disabled (1, 2, 3)      mean perf 0.0076
+  disabled (0, 1, 2, 3)   mean perf 0.0077
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/train_multi_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  iter   0 perf mean 0.2338  min 0.1059  max 0.3716
+  iter  10 perf mean 0.2650  min 0.0947  max 0.4185
+  iter  20 perf mean 0.2081  min 0.0433  max 0.3755
+  iter  30 perf mean 0.2380  min 0.0093  max 0.4849
+  iter  40 perf mean 0.2657  min 0.1408  max 0.3427
+  iter  50 perf mean 0.2896  min 0.1570  max 0.4071
+  iter  60 perf mean 0.2609  min 0.1195  max 0.3816
+trained multi seed 2 in 176s
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2485
+  disabled (0,)           mean perf 0.1231
+  disabled (1,)           mean perf 0.1221
+  disabled (2,)           mean perf 0.0420
+  disabled (3,)           mean perf 0.0627
+  disabled (0, 1)         mean perf 0.0573
+  disabled (0, 2)         mean perf 0.0172
+  disabled (0, 3)         mean perf 0.0264
+  disabled (1, 2)         mean perf 0.0120
+  disabled (1, 3)         mean perf 0.0134
+  disabled (2, 3)         mean perf 0.0050
+  disabled (0, 1, 2)      mean perf 0.0036
+  disabled (0, 1, 3)      mean perf 0.0055
+  disabled (0, 2, 3)      mean perf 0.0042
+  disabled (1, 2, 3)      mean perf 0.0028
+  disabled (0, 1, 2, 3)   mean perf 0.0019
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2524
+  disabled (0,)           mean perf 0.1736
+  disabled (1,)           mean perf 0.1748
+  disabled (2,)           mean perf 0.0654
+  disabled (3,)           mean perf 0.1217
+  disabled (0, 1)         mean perf 0.1601
+  disabled (0, 2)         mean perf 0.0364
+  disabled (0, 3)         mean perf 0.0670
+  disabled (1, 2)         mean perf 0.0377
+  disabled (1, 3)         mean perf 0.0434
+  disabled (2, 3)         mean perf 0.0620
+  disabled (0, 1, 2)      mean perf 0.0218
+  disabled (0, 1, 3)      mean perf 0.0218
+  disabled (0, 2, 3)      mean perf 0.0307
+  disabled (1, 2, 3)      mean perf 0.0358
+  disabled (0, 1, 2, 3)   mean perf 0.0155
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2033
+  disabled (0,)           mean perf 0.1301
+  disabled (1,)           mean perf 0.1064
+  disabled (2,)           mean perf 0.0428
+  disabled (3,)           mean perf 0.0731
+  disabled (0, 1)         mean perf 0.0687
+  disabled (0, 2)         mean perf 0.0213
+  disabled (0, 3)         mean perf 0.0336
+  disabled (1, 2)         mean perf 0.0128
+  disabled (1, 3)         mean perf 0.0146
+  disabled (2, 3)         mean perf 0.0135
+  disabled (0, 1, 2)      mean perf 0.0073
+  disabled (0, 1, 3)      mean perf 0.0089
+  disabled (0, 2, 3)      mean perf 0.0067
+  disabled (1, 2, 3)      mean perf 0.0032
+  disabled (0, 1, 2, 3)   mean perf 0.0021
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2213
+  disabled (0,)           mean perf 0.1081
+  disabled (1,)           mean perf 0.1042
+  disabled (2,)           mean perf 0.0424
+  disabled (3,)           mean perf 0.0629
+  disabled (0, 1)         mean perf 0.0505
+  disabled (0, 2)         mean perf 0.0116
+  disabled (0, 3)         mean perf 0.0229
+  disabled (1, 2)         mean perf 0.0118
+  disabled (1, 3)         mean perf 0.0130
+  disabled (2, 3)         mean perf 0.0048
+  disabled (0, 1, 2)      mean perf 0.0036
+  disabled (0, 1, 3)      mean perf 0.0055
+  disabled (0, 2, 3)      mean perf 0.0035
+  disabled (1, 2, 3)      mean perf 0.0030
+  disabled (0, 1, 2, 3)   mean perf 0.0020
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env low_gravity...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.0448
+  disabled (0,)           mean perf 0.0548
+  disabled (1,)           mean perf 0.0520
+  disabled (2,)           mean perf 0.0267
+  disabled (3,)           mean perf 0.0321
+  disabled (0, 1)         mean perf 0.0449
+  disabled (0, 2)         mean perf 0.0180
+  disabled (0, 3)         mean perf 0.0419
+  disabled (1, 2)         mean perf 0.0103
+  disabled (1, 3)         mean perf 0.0101
+  disabled (2, 3)         mean perf 0.0230
+  disabled (0, 1, 2)      mean perf 0.0093
+  disabled (0, 1, 3)      mean perf 0.0083
+  disabled (0, 2, 3)      mean perf 0.0152
+  disabled (1, 2, 3)      mean perf 0.0106
+  disabled (0, 1, 2, 3)   mean perf 0.0077
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/train_multi_comm_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  iter   0 perf mean 0.2338  min 0.1059  max 0.3716
+  iter  10 perf mean 0.1787  min 0.0689  max 0.4123
+  iter  20 perf mean 0.1417  min 0.0013  max 0.3421
+  iter  30 perf mean 0.2845  min 0.1897  max 0.4011
+  iter  40 perf mean 0.2208  min 0.0693  max 0.3453
+  iter  50 perf mean 0.1848  min 0.0001  max 0.4096
+  iter  60 perf mean 0.3344  min 0.1726  max 0.5071
+trained multi_comm seed 2 in 189s
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2837
+  disabled (0,)           mean perf 0.1439
+  disabled (1,)           mean perf 0.1139
+  disabled (2,)           mean perf 0.0483
+  disabled (3,)           mean perf 0.0832
+  disabled (0, 1)         mean perf 0.0602
+  disabled (0, 2)         mean perf 0.0171
+  disabled (0, 3)         mean perf 0.0300
+  disabled (1, 2)         mean perf 0.0123
+  disabled (1, 3)         mean perf 0.0134
+  disabled (2, 3)         mean perf 0.0158
+  disabled (0, 1, 2)      mean perf 0.0036
+  disabled (0, 1, 3)      mean perf 0.0055
+  disabled (0, 2, 3)      mean perf 0.0042
+  disabled (1, 2, 3)      mean perf 0.0028
+  disabled (0, 1, 2, 3)   mean perf 0.0019
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2635
+  disabled (0,)           mean perf 0.1963
+  disabled (1,)           mean perf 0.1581
+  disabled (2,)           mean perf 0.0927
+  disabled (3,)           mean perf 0.1430
+  disabled (0, 1)         mean perf 0.1702
+  disabled (0, 2)         mean perf 0.0369
+  disabled (0, 3)         mean perf 0.0826
+  disabled (1, 2)         mean perf 0.0374
+  disabled (1, 3)         mean perf 0.0438
+  disabled (2, 3)         mean perf 0.0966
+  disabled (0, 1, 2)      mean perf 0.0194
+  disabled (0, 1, 3)      mean perf 0.0215
+  disabled (0, 2, 3)      mean perf 0.0307
+  disabled (1, 2, 3)      mean perf 0.0357
+  disabled (0, 1, 2, 3)   mean perf 0.0155
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2445
+  disabled (0,)           mean perf 0.1362
+  disabled (1,)           mean perf 0.1182
+  disabled (2,)           mean perf 0.0498
+  disabled (3,)           mean perf 0.0781
+  disabled (0, 1)         mean perf 0.0737
+  disabled (0, 2)         mean perf 0.0214
+  disabled (0, 3)         mean perf 0.0386
+  disabled (1, 2)         mean perf 0.0129
+  disabled (1, 3)         mean perf 0.0145
+  disabled (2, 3)         mean perf 0.0211
+  disabled (0, 1, 2)      mean perf 0.0073
+  disabled (0, 1, 3)      mean perf 0.0089
+  disabled (0, 2, 3)      mean perf 0.0067
+  disabled (1, 2, 3)      mean perf 0.0032
+  disabled (0, 1, 2, 3)   mean perf 0.0021
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.2594
+  disabled (0,)           mean perf 0.1177
+  disabled (1,)           mean perf 0.1011
+  disabled (2,)           mean perf 0.0492
+  disabled (3,)           mean perf 0.0777
+  disabled (0, 1)         mean perf 0.0479
+  disabled (0, 2)         mean perf 0.0116
+  disabled (0, 3)         mean perf 0.0271
+  disabled (1, 2)         mean perf 0.0121
+  disabled (1, 3)         mean perf 0.0130
+  disabled (2, 3)         mean perf 0.0152
+  disabled (0, 1, 2)      mean perf 0.0036
+  disabled (0, 1, 3)      mean perf 0.0055
+  disabled (0, 2, 3)      mean perf 0.0035
+  disabled (1, 2, 3)      mean perf 0.0030
+  disabled (0, 1, 2, 3)   mean perf 0.0020
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env low_gravity...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/main/test_multi_comm_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  disabled ()             mean perf 0.0518
+  disabled (0,)           mean perf 0.0589
+  disabled (1,)           mean perf 0.0465
+  disabled (2,)           mean perf 0.0252
+  disabled (3,)           mean perf 0.0368
+  disabled (0, 1)         mean perf 0.0426
+  disabled (0, 2)         mean perf 0.0178
+  disabled (0, 3)         mean perf 0.0434
+  disabled (1, 2)         mean perf 0.0100
+  disabled (1, 3)         mean perf 0.0096
+  disabled (2, 3)         mean perf 0.0189
+  disabled (0, 1, 2)      mean perf 0.0095
+  disabled (0, 1, 3)      mean perf 0.0081
+  disabled (0, 2, 3)      mean perf 0.0152
+  disabled (1, 2, 3)      mean perf 0.0105
+  disabled (0, 1, 2, 3)   mean perf 0.0077

@@ -40,6 +40,12 @@ n_sin_waves = 10        # How many oscillatory features for "brain" input
 n_hidden = 32           # Hidden units in each layer
 gradient_clip = 0.16    # Gradient clipping value for training stability
 
+# Inter-level communication (off by default; used by experiments/). Sub-bots are grouped into modules of
+# two (s // 2). Level-3 message m3 and per-module level-2 messages m2 are computed from pooled
+# bottom-up summaries (mean x-velocity, touch fraction) and fed back into every sub-bot's hidden layer.
+comm_enabled = False
+n_comm_mod = 1
+
 MAX_INT = np.iinfo(np.int32).max
 
 # =============================================================================
@@ -61,7 +67,8 @@ def set_ti_globals():
             weights1, bias1, weights2, bias2, hidden, act, is_free_fall, touch_sensor, \
             conn_weights1, conn_bias1, conn_weights2, conn_bias2, conn_hidden, conn_update_scale, \
     ground_segs_x0, ground_segs_y0, ground_segs_slope, ground_segs_shift, ground_segs_len, \
-        s_ids, p_ids, sub_robot_loss, actual_spring_sub_count, sub_robot_spring_count, sub_robot_obj_count, sub_robot_obj_sub
+        s_ids, p_ids, sub_robot_loss, actual_spring_sub_count, sub_robot_spring_count, sub_robot_obj_count, sub_robot_obj_sub, \
+        pool_v, pool_c, msg, comm_in, comm_w2, comm_b2, comm_w3, comm_b3, comm_update_scale
     # Simulation physical state fields
     loss = scalarf32()
     actual_spring_sub_count = scalari32()
@@ -102,6 +109,15 @@ def set_ti_globals():
     conn_bias2 = scalarf32()
     s_ids = scalari32()  # IDs mapping spring to sub-bot
     touch_sensor = scalarf32()  # Contact sensor value per object
+    pool_v = scalarf32()  # Pooled mean x-velocity per module (communication)
+    pool_c = scalarf32()  # Pooled touch fraction per module (communication)
+    msg = scalarf32()  # Messages: [0..n_comm_mod) level-2, index n_comm_mod is level-3
+    comm_in = scalarf32()  # Sub-bot hidden-layer weights for incoming messages
+    comm_w2 = scalarf32()  # Level-2 controller weights: [module, (pool_v, pool_c, m3)]
+    comm_b2 = scalarf32()
+    comm_w3 = scalarf32()  # Level-3 controller weights: [module, (pool_v, pool_c)]
+    comm_b3 = scalarf32()
+    comm_update_scale = scalarf32()
 
 # =============================================================================
 # NN INPUT DIMENSION FUNCTIONS
@@ -154,6 +170,15 @@ def allocate_fields():
     ti.root.dense(ti.ijk, (1, max_springs, n_hidden)).place(conn_weights2)
     ti.root.dense(ti.ij, (1, max_springs)).place(conn_bias2)
     ti.root.dense(ti.i, 1).place(conn_update_scale)
+    global n_comm_mod
+    n_comm_mod = max(1, n_sub_bots // 2)
+    ti.root.dense(ti.ijk, (n_robots, sim_steps, n_comm_mod)).place(pool_v, pool_c)
+    ti.root.dense(ti.ijk, (n_robots, sim_steps, n_comm_mod + 1)).place(msg)
+    ti.root.dense(ti.ijk, (n_sub_bots, n_hidden, 2)).place(comm_in)
+    ti.root.dense(ti.ij, (n_comm_mod, 3)).place(comm_w2)
+    ti.root.dense(ti.i, n_comm_mod).place(comm_b2)
+    ti.root.dense(ti.ij, (n_comm_mod, 2)).place(comm_w3)
+    ti.root.dense(ti.i, 1).place(comm_b3, comm_update_scale)
     # Pre-allocate lazy gradient storage for all fields used in backward pass
     ti.root.lazy_grad()
 
@@ -176,6 +201,32 @@ def compute_center(t: ti.i32):
     for r, s in ti.ndrange(n_robots, n_sub_bots):
         # Average accumulated positions to get center of mass for sub-robot s
         center[r, s, t] += (1.0 / sub_robot_obj_count[r, s]) * center[r, s, t] - center[r, s, t]
+
+# =============================================================================
+# INTER-LEVEL COMMUNICATION: POOLED SUMMARIES AND MESSAGES
+# =============================================================================
+# Bottom-up: each module (pair of sub-bots) pools mean x-velocity and touch fraction of its points.
+# The level-3 controller reads both module pools and emits m3; each level-2 controller reads its
+# module pool plus m3 (top-down) and emits m2. nn1 feeds (m2 of own module, m3) into every sub-bot.
+@ti.kernel
+def comm_signals(t: ti.i32):
+    for r, i in ti.ndrange(n_robots, max_objects):
+        if i < n_objects[r]:
+            s = p_ids[r, i] - 1
+            if s >= 0:
+                w = 1.0 / (2.0 * sub_robot_obj_count[r, s])
+                pool_v[r, t, s // 2] += v[r, t, i][0] * 10 * w
+                pool_c[r, t, s // 2] += touch_sensor[r, t, i] * w
+    for r, m in ti.ndrange(n_robots, n_comm_mod):
+        msg[r, t, n_comm_mod] += comm_w3[m, 0] * pool_v[r, t, m] + comm_w3[m, 1] * pool_c[r, t, m]
+    for r in range(n_robots):
+        msg[r, t, n_comm_mod] += comm_b3[0]
+        msg[r, t, n_comm_mod] += ti.tanh(msg[r, t, n_comm_mod]) - msg[r, t, n_comm_mod]
+    for r, m in ti.ndrange(n_robots, n_comm_mod):
+        msg[r, t, m] += comm_w2[m, 0] * pool_v[r, t, m] + comm_w2[m, 1] * pool_c[r, t, m] \
+            + comm_w2[m, 2] * msg[r, t, n_comm_mod]
+        msg[r, t, m] += comm_b2[m]
+        msg[r, t, m] += ti.tanh(msg[r, t, m]) - msg[r, t, m]
 
 # =============================================================================
 # NEURAL NETWORK PART 1: COMPUTE HIDDEN LAYER ACTIVATIONS
@@ -239,6 +290,11 @@ def nn1(t: ti.i32):
             # this too late, my intent was to use act[r, t-1, s]. Keeping this in here for shape compatibility.
             conn_hidden[r, t, s, i] += conn_weights1[i, s * n_conn_inputs + 10] * act[r, t, s]
             conn_hidden[r, t, s, i] += conn_weights1[i, s * n_conn_inputs + 11] * spring_length[r, s]
+
+    # Incoming inter-level messages (only when communication is enabled)
+    if ti.static(comm_enabled):
+        for r, s, i in ti.ndrange(n_robots, n_sub_bots, n_hidden):
+            hidden[r, s, t, i] += comm_in[s, i, 0] * msg[r, t, s // 2] + comm_in[s, i, 1] * msg[r, t, n_comm_mod]
 
     # Apply bias and nonlinear activation (modified tanh) for sub-robots
     for r, s, i in ti.ndrange(n_robots, n_sub_bots, n_hidden):
@@ -538,6 +594,12 @@ def compute_loss_sub(t: ti.i32):
 @ti.kernel
 def clear_states():
     conn_update_scale[0] = 0.0
+    comm_update_scale[0] = 0.0
+    for r, t, m in ti.ndrange(n_robots, sim_steps, n_comm_mod):
+        pool_v[r, t, m] = 0.0
+        pool_c[r, t, m] = 0.0
+    for r, t, m in ti.ndrange(n_robots, sim_steps, n_comm_mod + 1):
+        msg[r, t, m] = 0.0
     for r, s, t in ti.ndrange(n_robots, n_sub_bots, sim_steps):
         center[r, s, t] = ti.Vector([0.0, 0.0])
     for r, t, i in ti.ndrange(n_robots, sim_steps, max_objects):
@@ -568,6 +630,21 @@ def clear_grad():
         weights1.grad[r, s, i, j] = 0.0
     for r, s, i in ti.ndrange(n_robots, n_sub_bots, max_springs):
         bias2.grad[r, s, i] = 0.0
+
+    for r, t, m in ti.ndrange(n_robots, sim_steps, n_comm_mod):
+        pool_v.grad[r, t, m] = 0.0
+        pool_c.grad[r, t, m] = 0.0
+    for r, t, m in ti.ndrange(n_robots, sim_steps, n_comm_mod + 1):
+        msg.grad[r, t, m] = 0.0
+    for s, i, k in ti.ndrange(n_sub_bots, n_hidden, 2):
+        comm_in.grad[s, i, k] = 0.0
+    for m, k in ti.ndrange(n_comm_mod, 3):
+        comm_w2.grad[m, k] = 0.0
+    for m in ti.ndrange(n_comm_mod):
+        comm_b2.grad[m] = 0.0
+    for m, k in ti.ndrange(n_comm_mod, 2):
+        comm_w3.grad[m, k] = 0.0
+    comm_b3.grad[0] = 0.0
 
     for i in ti.ndrange(n_hidden):
         conn_bias1.grad[i] = 0.0
@@ -988,6 +1065,8 @@ def forward(save_state=False, outdir=None):
     global sim_steps
     for t in range(1, sim_steps):
         compute_center(t - 1)  # Compute center of mass at previous timestep
+        if comm_enabled:
+            comm_signals(t - 1)  # Pooled summaries and inter-level messages
         nn1(t - 1)  # NN layer 1 forward pass
         nn2(t - 1)  # NN layer 2 forward pass to compute spring activations
         apply_spring_force(t - 1)  # Apply forces on springs for timestep t-1
@@ -1027,6 +1106,8 @@ def manual_backward():
         apply_spring_force.grad(t - 1)
         nn2.grad(t - 1)
         nn1.grad(t - 1)
+        if comm_enabled:
+            comm_signals.grad(t - 1)
         compute_center.grad(t - 1)
 
 # =============================================================================
@@ -1077,6 +1158,43 @@ def update_weights_conn():
         conn_weights2[i, j, k] -= conn_update_scale[0] * (conn_weights2.grad[i, j, k])
     for i, j in ti.ndrange(1, max_springs):
         conn_bias2[i, j] -= conn_update_scale[0] * (conn_bias2.grad[i, j])
+
+# =============================================================================
+# UPDATE COMMUNICATION WEIGHTS WITH GRADIENT DESCENT
+# =============================================================================
+# Same normalized-gradient step as update_weights_conn; comm parameters are shared across robots.
+@ti.kernel
+def update_weights_comm():
+    for s, i, k in ti.ndrange(n_sub_bots, n_hidden, 2):
+        comm_update_scale[0] += comm_in.grad[s, i, k] ** 2
+    for m, k in ti.ndrange(n_comm_mod, 3):
+        comm_update_scale[0] += comm_w2.grad[m, k] ** 2
+    for m in ti.ndrange(n_comm_mod):
+        comm_update_scale[0] += comm_b2.grad[m] ** 2
+    for m, k in ti.ndrange(n_comm_mod, 2):
+        comm_update_scale[0] += comm_w3.grad[m, k] ** 2
+    comm_update_scale[0] += comm_b3.grad[0] ** 2
+    comm_update_scale[0] += gradient_clip / (comm_update_scale[0] ** 0.5 + 1e-6) - comm_update_scale[0]
+
+    for s, i, k in ti.ndrange(n_sub_bots, n_hidden, 2):
+        comm_in[s, i, k] -= comm_update_scale[0] * comm_in.grad[s, i, k]
+    for m, k in ti.ndrange(n_comm_mod, 3):
+        comm_w2[m, k] -= comm_update_scale[0] * comm_w2.grad[m, k]
+    for m in ti.ndrange(n_comm_mod):
+        comm_b2[m] -= comm_update_scale[0] * comm_b2.grad[m]
+    for m, k in ti.ndrange(n_comm_mod, 2):
+        comm_w3[m, k] -= comm_update_scale[0] * comm_w3.grad[m, k]
+    comm_b3[0] -= comm_update_scale[0] * comm_b3.grad[0]
+
+def init_comm(seed=0):
+    # Incoming weights start at zero (behavior initially identical to no communication);
+    # controller weights are small random so that gradients can reach comm_in.
+    rng = np.random.default_rng(seed)
+    comm_in.from_numpy(np.zeros((n_sub_bots, n_hidden, 2), dtype=np.float32))
+    comm_w2.from_numpy(rng.normal(0, 0.5, (n_comm_mod, 3)).astype(np.float32))
+    comm_b2.from_numpy(np.zeros(n_comm_mod, dtype=np.float32))
+    comm_w3.from_numpy(rng.normal(0, 0.5, (n_comm_mod, 2)).astype(np.float32))
+    comm_b3.from_numpy(np.zeros(1, dtype=np.float32))
 
 # =============================================================================
 # TRAIN ROBOTS TO WALK USING LEARNING LOOP
