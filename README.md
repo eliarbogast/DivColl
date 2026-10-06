@@ -1,5 +1,6 @@
 # Fork of DivColl - Early stages work to test simulation with inter-level communication
 https://github.com/jbongard/DivColl
+
 Code and data for:
 
 > Hein A, Bongard J. **Environmental resilience via morphological diversity
