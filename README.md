@@ -1,4 +1,4 @@
-# DivColl
+# Fork of DivColl - Early stages work to test simulation with inter-level communication
 
 Code and data for:
 
