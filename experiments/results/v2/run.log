@@ -1,0 +1,1203 @@
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.3033
+  modules   0        mean perf 0.0580
+  modules   1        mean perf 0.0168
+  modules   2        mean perf 0.0282
+  modules   3        mean perf 0.1065
+  modules   0,1      mean perf 0.0166
+  modules   0,2      mean perf 0.0026
+  modules   0,3      mean perf 0.0346
+  modules   1,2      mean perf 0.0023
+  modules   1,3      mean perf 0.0018
+  modules   2,3      mean perf 0.0263
+  modules   0,1,2    mean perf 0.0024
+  modules   0,1,3    mean perf 0.0018
+  modules   0,2,3    mean perf 0.0020
+  modules   1,2,3    mean perf 0.0018
+  top_conn  1-2      mean perf 0.0481
+  pair_conn 0-1,2-3  mean perf 0.0364
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.2626
+  modules   0        mean perf 0.1045
+  modules   1        mean perf 0.0628
+  modules   2        mean perf 0.0490
+  modules   3        mean perf 0.1279
+  modules   0,1      mean perf 0.0652
+  modules   0,2      mean perf 0.0154
+  modules   0,3      mean perf 0.0555
+  modules   1,2      mean perf 0.0182
+  modules   1,3      mean perf 0.0193
+  modules   2,3      mean perf 0.0507
+  modules   0,1,2    mean perf 0.0177
+  modules   0,1,3    mean perf 0.0185
+  modules   0,2,3    mean perf 0.0166
+  modules   1,2,3    mean perf 0.0186
+  top_conn  1-2      mean perf 0.0812
+  pair_conn 0-1,2-3  mean perf 0.0454
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.2459
+  modules   0        mean perf 0.0612
+  modules   1        mean perf 0.0166
+  modules   2        mean perf 0.0240
+  modules   3        mean perf 0.0969
+  modules   0,1      mean perf 0.0162
+  modules   0,2      mean perf 0.0029
+  modules   0,3      mean perf 0.0291
+  modules   1,2      mean perf 0.0027
+  modules   1,3      mean perf 0.0022
+  modules   2,3      mean perf 0.0221
+  modules   0,1,2    mean perf 0.0027
+  modules   0,1,3    mean perf 0.0022
+  modules   0,2,3    mean perf 0.0024
+  modules   1,2,3    mean perf 0.0021
+  top_conn  1-2      mean perf 0.0413
+  pair_conn 0-1,2-3  mean perf 0.0310
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.2596
+  modules   0        mean perf 0.0566
+  modules   1        mean perf 0.0167
+  modules   2        mean perf 0.0272
+  modules   3        mean perf 0.0912
+  modules   0,1      mean perf 0.0165
+  modules   0,2      mean perf 0.0025
+  modules   0,3      mean perf 0.0337
+  modules   1,2      mean perf 0.0023
+  modules   1,3      mean perf 0.0017
+  modules   2,3      mean perf 0.0255
+  modules   0,1,2    mean perf 0.0024
+  modules   0,1,3    mean perf 0.0017
+  modules   0,2,3    mean perf 0.0020
+  modules   1,2,3    mean perf 0.0017
+  top_conn  1-2      mean perf 0.0471
+  pair_conn 0-1,2-3  mean perf 0.0357
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/step_down.npy...
+n_ground_segs: 4
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.2634
+  modules   0        mean perf 0.0579
+  modules   1        mean perf 0.0168
+  modules   2        mean perf 0.0280
+  modules   3        mean perf 0.0978
+  modules   0,1      mean perf 0.0166
+  modules   0,2      mean perf 0.0026
+  modules   0,3      mean perf 0.0346
+  modules   1,2      mean perf 0.0023
+  modules   1,3      mean perf 0.0018
+  modules   2,3      mean perf 0.0262
+  modules   0,1,2    mean perf 0.0024
+  modules   0,1,3    mean perf 0.0018
+  modules   0,2,3    mean perf 0.0020
+  modules   1,2,3    mean perf 0.0018
+  top_conn  1-2      mean perf 0.0484
+  pair_conn 0-1,2-3  mean perf 0.0365
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.3001
+  modules   0        mean perf 0.1434
+  modules   1        mean perf 0.1368
+  modules   2        mean perf 0.0571
+  modules   3        mean perf 0.0764
+  modules   0,1      mean perf 0.0745
+  modules   0,2      mean perf 0.0201
+  modules   0,3      mean perf 0.0363
+  modules   1,2      mean perf 0.0165
+  modules   1,3      mean perf 0.0117
+  modules   2,3      mean perf 0.0258
+  modules   0,1,2    mean perf 0.0040
+  modules   0,1,3    mean perf 0.0046
+  modules   0,2,3    mean perf 0.0028
+  modules   1,2,3    mean perf 0.0033
+  top_conn  1-2      mean perf 0.2227
+  pair_conn 0-1,2-3  mean perf 0.0738
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2841
+  modules   0        mean perf 0.1721
+  modules   1        mean perf 0.1768
+  modules   2        mean perf 0.1032
+  modules   3        mean perf 0.1431
+  modules   0,1      mean perf 0.1688
+  modules   0,2      mean perf 0.0284
+  modules   0,3      mean perf 0.0763
+  modules   1,2      mean perf 0.0415
+  modules   1,3      mean perf 0.0400
+  modules   2,3      mean perf 0.0926
+  modules   0,1,2    mean perf 0.0245
+  modules   0,1,3    mean perf 0.0240
+  modules   0,2,3    mean perf 0.0221
+  modules   1,2,3    mean perf 0.0375
+  top_conn  1-2      mean perf 0.2223
+  pair_conn 0-1,2-3  mean perf 0.0951
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2840
+  modules   0        mean perf 0.1542
+  modules   1        mean perf 0.1318
+  modules   2        mean perf 0.0575
+  modules   3        mean perf 0.0839
+  modules   0,1      mean perf 0.0830
+  modules   0,2      mean perf 0.0221
+  modules   0,3      mean perf 0.0416
+  modules   1,2      mean perf 0.0176
+  modules   1,3      mean perf 0.0101
+  modules   2,3      mean perf 0.0361
+  modules   0,1,2    mean perf 0.0082
+  modules   0,1,3    mean perf 0.0067
+  modules   0,2,3    mean perf 0.0037
+  modules   1,2,3    mean perf 0.0048
+  top_conn  1-2      mean perf 0.2261
+  pair_conn 0-1,2-3  mean perf 0.0668
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2666
+  modules   0        mean perf 0.1196
+  modules   1        mean perf 0.1161
+  modules   2        mean perf 0.0510
+  modules   3        mean perf 0.0778
+  modules   0,1      mean perf 0.0634
+  modules   0,2      mean perf 0.0169
+  modules   0,3      mean perf 0.0335
+  modules   1,2      mean perf 0.0163
+  modules   1,3      mean perf 0.0115
+  modules   2,3      mean perf 0.0245
+  modules   0,1,2    mean perf 0.0039
+  modules   0,1,3    mean perf 0.0045
+  modules   0,2,3    mean perf 0.0028
+  modules   1,2,3    mean perf 0.0033
+  top_conn  1-2      mean perf 0.2032
+  pair_conn 0-1,2-3  mean perf 0.0647
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/step_down.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2530
+  modules   0        mean perf 0.1527
+  modules   1        mean perf 0.1330
+  modules   2        mean perf 0.0538
+  modules   3        mean perf 0.0758
+  modules   0,1      mean perf 0.0742
+  modules   0,2      mean perf 0.0200
+  modules   0,3      mean perf 0.0342
+  modules   1,2      mean perf 0.0165
+  modules   1,3      mean perf 0.0117
+  modules   2,3      mean perf 0.0258
+  modules   0,1,2    mean perf 0.0040
+  modules   0,1,3    mean perf 0.0046
+  modules   0,2,3    mean perf 0.0028
+  modules   1,2,3    mean perf 0.0033
+  top_conn  1-2      mean perf 0.2211
+  pair_conn 0-1,2-3  mean perf 0.0771
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.3173
+  modules   0        mean perf 0.1259
+  modules   1        mean perf 0.1418
+  modules   2        mean perf 0.0452
+  modules   3        mean perf 0.0923
+  modules   0,1      mean perf 0.0789
+  modules   0,2      mean perf 0.0200
+  modules   0,3      mean perf 0.0265
+  modules   1,2      mean perf 0.0166
+  modules   1,3      mean perf 0.0116
+  modules   2,3      mean perf 0.0367
+  modules   0,1,2    mean perf 0.0040
+  modules   0,1,3    mean perf 0.0046
+  modules   0,2,3    mean perf 0.0028
+  modules   1,2,3    mean perf 0.0033
+  top_conn  1-2      mean perf 0.2593
+  pair_conn 0-1,2-3  mean perf 0.0670
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2655
+  modules   0        mean perf 0.1855
+  modules   1        mean perf 0.1873
+  modules   2        mean perf 0.1073
+  modules   3        mean perf 0.1303
+  modules   0,1      mean perf 0.1676
+  modules   0,2      mean perf 0.0286
+  modules   0,3      mean perf 0.0815
+  modules   1,2      mean perf 0.0418
+  modules   1,3      mean perf 0.0407
+  modules   2,3      mean perf 0.1011
+  modules   0,1,2    mean perf 0.0246
+  modules   0,1,3    mean perf 0.0243
+  modules   0,2,3    mean perf 0.0223
+  modules   1,2,3    mean perf 0.0377
+  top_conn  1-2      mean perf 0.2396
+  pair_conn 0-1,2-3  mean perf 0.0892
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2555
+  modules   0        mean perf 0.1316
+  modules   1        mean perf 0.1235
+  modules   2        mean perf 0.0541
+  modules   3        mean perf 0.0847
+  modules   0,1      mean perf 0.0858
+  modules   0,2      mean perf 0.0222
+  modules   0,3      mean perf 0.0305
+  modules   1,2      mean perf 0.0177
+  modules   1,3      mean perf 0.0101
+  modules   2,3      mean perf 0.0332
+  modules   0,1,2    mean perf 0.0082
+  modules   0,1,3    mean perf 0.0067
+  modules   0,2,3    mean perf 0.0037
+  modules   1,2,3    mean perf 0.0048
+  top_conn  1-2      mean perf 0.2207
+  pair_conn 0-1,2-3  mean perf 0.0694
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2816
+  modules   0        mean perf 0.1047
+  modules   1        mean perf 0.1068
+  modules   2        mean perf 0.0458
+  modules   3        mean perf 0.0876
+  modules   0,1      mean perf 0.0651
+  modules   0,2      mean perf 0.0169
+  modules   0,3      mean perf 0.0250
+  modules   1,2      mean perf 0.0164
+  modules   1,3      mean perf 0.0115
+  modules   2,3      mean perf 0.0364
+  modules   0,1,2    mean perf 0.0039
+  modules   0,1,3    mean perf 0.0045
+  modules   0,2,3    mean perf 0.0027
+  modules   1,2,3    mean perf 0.0033
+  top_conn  1-2      mean perf 0.2185
+  pair_conn 0-1,2-3  mean perf 0.0605
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_0.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/step_down.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2754
+  modules   0        mean perf 0.1338
+  modules   1        mean perf 0.1291
+  modules   2        mean perf 0.0448
+  modules   3        mean perf 0.0924
+  modules   0,1      mean perf 0.0780
+  modules   0,2      mean perf 0.0200
+  modules   0,3      mean perf 0.0265
+  modules   1,2      mean perf 0.0166
+  modules   1,3      mean perf 0.0117
+  modules   2,3      mean perf 0.0369
+  modules   0,1,2    mean perf 0.0040
+  modules   0,1,3    mean perf 0.0046
+  modules   0,2,3    mean perf 0.0028
+  modules   1,2,3    mean perf 0.0033
+  top_conn  1-2      mean perf 0.2641
+  pair_conn 0-1,2-3  mean perf 0.0684
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.3444
+  modules   0        mean perf 0.0890
+  modules   1        mean perf 0.0109
+  modules   2        mean perf 0.0291
+  modules   3        mean perf 0.0833
+  modules   0,1      mean perf 0.0106
+  modules   0,2      mean perf 0.0021
+  modules   0,3      mean perf 0.0123
+  modules   1,2      mean perf 0.0024
+  modules   1,3      mean perf 0.0023
+  modules   2,3      mean perf 0.0284
+  modules   0,1,2    mean perf 0.0020
+  modules   0,1,3    mean perf 0.0018
+  modules   0,2,3    mean perf 0.0018
+  modules   1,2,3    mean perf 0.0022
+  top_conn  1-2      mean perf 0.0773
+  pair_conn 0-1,2-3  mean perf 0.0140
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.2474
+  modules   0        mean perf 0.1032
+  modules   1        mean perf 0.0540
+  modules   2        mean perf 0.0815
+  modules   3        mean perf 0.1541
+  modules   0,1      mean perf 0.0513
+  modules   0,2      mean perf 0.0184
+  modules   0,3      mean perf 0.0342
+  modules   1,2      mean perf 0.0271
+  modules   1,3      mean perf 0.0275
+  modules   2,3      mean perf 0.0819
+  modules   0,1,2    mean perf 0.0227
+  modules   0,1,3    mean perf 0.0218
+  modules   0,2,3    mean perf 0.0132
+  modules   1,2,3    mean perf 0.0231
+  top_conn  1-2      mean perf 0.1195
+  pair_conn 0-1,2-3  mean perf 0.0367
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.2837
+  modules   0        mean perf 0.0771
+  modules   1        mean perf 0.0121
+  modules   2        mean perf 0.0236
+  modules   3        mean perf 0.1007
+  modules   0,1      mean perf 0.0119
+  modules   0,2      mean perf 0.0023
+  modules   0,3      mean perf 0.0109
+  modules   1,2      mean perf 0.0026
+  modules   1,3      mean perf 0.0025
+  modules   2,3      mean perf 0.0219
+  modules   0,1,2    mean perf 0.0022
+  modules   0,1,3    mean perf 0.0020
+  modules   0,2,3    mean perf 0.0022
+  modules   1,2,3    mean perf 0.0025
+  top_conn  1-2      mean perf 0.0699
+  pair_conn 0-1,2-3  mean perf 0.0115
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.3271
+  modules   0        mean perf 0.0837
+  modules   1        mean perf 0.0107
+  modules   2        mean perf 0.0264
+  modules   3        mean perf 0.0777
+  modules   0,1      mean perf 0.0105
+  modules   0,2      mean perf 0.0020
+  modules   0,3      mean perf 0.0115
+  modules   1,2      mean perf 0.0023
+  modules   1,3      mean perf 0.0022
+  modules   2,3      mean perf 0.0257
+  modules   0,1,2    mean perf 0.0019
+  modules   0,1,3    mean perf 0.0017
+  modules   0,2,3    mean perf 0.0017
+  modules   1,2,3    mean perf 0.0021
+  top_conn  1-2      mean perf 0.0745
+  pair_conn 0-1,2-3  mean perf 0.0136
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/step_down.npy...
+n_ground_segs: 4
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.3360
+  modules   0        mean perf 0.0894
+  modules   1        mean perf 0.0109
+  modules   2        mean perf 0.0296
+  modules   3        mean perf 0.0844
+  modules   0,1      mean perf 0.0106
+  modules   0,2      mean perf 0.0021
+  modules   0,3      mean perf 0.0122
+  modules   1,2      mean perf 0.0024
+  modules   1,3      mean perf 0.0022
+  modules   2,3      mean perf 0.0288
+  modules   0,1,2    mean perf 0.0020
+  modules   0,1,3    mean perf 0.0018
+  modules   0,2,3    mean perf 0.0018
+  modules   1,2,3    mean perf 0.0022
+  top_conn  1-2      mean perf 0.0750
+  pair_conn 0-1,2-3  mean perf 0.0140
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.3031
+  modules   0        mean perf 0.1030
+  modules   1        mean perf 0.1013
+  modules   2        mean perf 0.0481
+  modules   3        mean perf 0.1066
+  modules   0,1      mean perf 0.0607
+  modules   0,2      mean perf 0.0169
+  modules   0,3      mean perf 0.0316
+  modules   1,2      mean perf 0.0115
+  modules   1,3      mean perf 0.0143
+  modules   2,3      mean perf 0.0158
+  modules   0,1,2    mean perf 0.0033
+  modules   0,1,3    mean perf 0.0040
+  modules   0,2,3    mean perf 0.0032
+  modules   1,2,3    mean perf 0.0036
+  top_conn  1-2      mean perf 0.2448
+  pair_conn 0-1,2-3  mean perf 0.0625
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2536
+  modules   0        mean perf 0.1177
+  modules   1        mean perf 0.1710
+  modules   2        mean perf 0.1247
+  modules   3        mean perf 0.1763
+  modules   0,1      mean perf 0.1743
+  modules   0,2      mean perf 0.0399
+  modules   0,3      mean perf 0.0872
+  modules   1,2      mean perf 0.0452
+  modules   1,3      mean perf 0.0475
+  modules   2,3      mean perf 0.1078
+  modules   0,1,2    mean perf 0.0301
+  modules   0,1,3    mean perf 0.0326
+  modules   0,2,3    mean perf 0.0294
+  modules   1,2,3    mean perf 0.0340
+  top_conn  1-2      mean perf 0.2333
+  pair_conn 0-1,2-3  mean perf 0.0827
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2541
+  modules   0        mean perf 0.1120
+  modules   1        mean perf 0.1145
+  modules   2        mean perf 0.0565
+  modules   3        mean perf 0.1053
+  modules   0,1      mean perf 0.0735
+  modules   0,2      mean perf 0.0206
+  modules   0,3      mean perf 0.0351
+  modules   1,2      mean perf 0.0144
+  modules   1,3      mean perf 0.0151
+  modules   2,3      mean perf 0.0202
+  modules   0,1,2    mean perf 0.0063
+  modules   0,1,3    mean perf 0.0067
+  modules   0,2,3    mean perf 0.0048
+  modules   1,2,3    mean perf 0.0046
+  top_conn  1-2      mean perf 0.2176
+  pair_conn 0-1,2-3  mean perf 0.0601
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2695
+  modules   0        mean perf 0.0916
+  modules   1        mean perf 0.0826
+  modules   2        mean perf 0.0473
+  modules   3        mean perf 0.1069
+  modules   0,1      mean perf 0.0450
+  modules   0,2      mean perf 0.0095
+  modules   0,3      mean perf 0.0267
+  modules   1,2      mean perf 0.0101
+  modules   1,3      mean perf 0.0120
+  modules   2,3      mean perf 0.0157
+  modules   0,1,2    mean perf 0.0032
+  modules   0,1,3    mean perf 0.0038
+  modules   0,2,3    mean perf 0.0025
+  modules   1,2,3    mean perf 0.0033
+  top_conn  1-2      mean perf 0.2311
+  pair_conn 0-1,2-3  mean perf 0.0570
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/step_down.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2764
+  modules   0        mean perf 0.1054
+  modules   1        mean perf 0.0917
+  modules   2        mean perf 0.0460
+  modules   3        mean perf 0.1037
+  modules   0,1      mean perf 0.0579
+  modules   0,2      mean perf 0.0169
+  modules   0,3      mean perf 0.0307
+  modules   1,2      mean perf 0.0114
+  modules   1,3      mean perf 0.0143
+  modules   2,3      mean perf 0.0158
+  modules   0,1,2    mean perf 0.0033
+  modules   0,1,3    mean perf 0.0040
+  modules   0,2,3    mean perf 0.0032
+  modules   1,2,3    mean perf 0.0036
+  top_conn  1-2      mean perf 0.2291
+  pair_conn 0-1,2-3  mean perf 0.0623
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2819
+  modules   0        mean perf 0.1052
+  modules   1        mean perf 0.0991
+  modules   2        mean perf 0.0482
+  modules   3        mean perf 0.1064
+  modules   0,1      mean perf 0.0568
+  modules   0,2      mean perf 0.0168
+  modules   0,3      mean perf 0.0309
+  modules   1,2      mean perf 0.0115
+  modules   1,3      mean perf 0.0143
+  modules   2,3      mean perf 0.0176
+  modules   0,1,2    mean perf 0.0033
+  modules   0,1,3    mean perf 0.0040
+  modules   0,2,3    mean perf 0.0032
+  modules   1,2,3    mean perf 0.0036
+  top_conn  1-2      mean perf 0.2570
+  pair_conn 0-1,2-3  mean perf 0.0676
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2471
+  modules   0        mean perf 0.1260
+  modules   1        mean perf 0.1763
+  modules   2        mean perf 0.1227
+  modules   3        mean perf 0.1497
+  modules   0,1      mean perf 0.1648
+  modules   0,2      mean perf 0.0400
+  modules   0,3      mean perf 0.0806
+  modules   1,2      mean perf 0.0452
+  modules   1,3      mean perf 0.0476
+  modules   2,3      mean perf 0.1118
+  modules   0,1,2    mean perf 0.0300
+  modules   0,1,3    mean perf 0.0327
+  modules   0,2,3    mean perf 0.0294
+  modules   1,2,3    mean perf 0.0340
+  top_conn  1-2      mean perf 0.2364
+  pair_conn 0-1,2-3  mean perf 0.0779
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2686
+  modules   0        mean perf 0.1103
+  modules   1        mean perf 0.1102
+  modules   2        mean perf 0.0568
+  modules   3        mean perf 0.1124
+  modules   0,1      mean perf 0.0764
+  modules   0,2      mean perf 0.0205
+  modules   0,3      mean perf 0.0335
+  modules   1,2      mean perf 0.0144
+  modules   1,3      mean perf 0.0151
+  modules   2,3      mean perf 0.0208
+  modules   0,1,2    mean perf 0.0063
+  modules   0,1,3    mean perf 0.0067
+  modules   0,2,3    mean perf 0.0048
+  modules   1,2,3    mean perf 0.0046
+  top_conn  1-2      mean perf 0.2170
+  pair_conn 0-1,2-3  mean perf 0.0596
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2681
+  modules   0        mean perf 0.0841
+  modules   1        mean perf 0.0882
+  modules   2        mean perf 0.0467
+  modules   3        mean perf 0.1029
+  modules   0,1      mean perf 0.0467
+  modules   0,2      mean perf 0.0095
+  modules   0,3      mean perf 0.0257
+  modules   1,2      mean perf 0.0101
+  modules   1,3      mean perf 0.0120
+  modules   2,3      mean perf 0.0176
+  modules   0,1,2    mean perf 0.0032
+  modules   0,1,3    mean perf 0.0038
+  modules   0,2,3    mean perf 0.0025
+  modules   1,2,3    mean perf 0.0033
+  top_conn  1-2      mean perf 0.2310
+  pair_conn 0-1,2-3  mean perf 0.0608
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_1.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/step_down.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2733
+  modules   0        mean perf 0.1124
+  modules   1        mean perf 0.0921
+  modules   2        mean perf 0.0484
+  modules   3        mean perf 0.1073
+  modules   0,1      mean perf 0.0562
+  modules   0,2      mean perf 0.0168
+  modules   0,3      mean perf 0.0309
+  modules   1,2      mean perf 0.0114
+  modules   1,3      mean perf 0.0143
+  modules   2,3      mean perf 0.0176
+  modules   0,1,2    mean perf 0.0033
+  modules   0,1,3    mean perf 0.0040
+  modules   0,2,3    mean perf 0.0032
+  modules   1,2,3    mean perf 0.0036
+  top_conn  1-2      mean perf 0.2294
+  pair_conn 0-1,2-3  mean perf 0.0692
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.2891
+  modules   0        mean perf 0.0767
+  modules   1        mean perf 0.0145
+  modules   2        mean perf 0.0269
+  modules   3        mean perf 0.1023
+  modules   0,1      mean perf 0.0166
+  modules   0,2      mean perf 0.0021
+  modules   0,3      mean perf 0.0115
+  modules   1,2      mean perf 0.0022
+  modules   1,3      mean perf 0.0021
+  modules   2,3      mean perf 0.0259
+  modules   0,1,2    mean perf 0.0022
+  modules   0,1,3    mean perf 0.0021
+  modules   0,2,3    mean perf 0.0018
+  modules   1,2,3    mean perf 0.0019
+  top_conn  1-2      mean perf 0.0664
+  pair_conn 0-1,2-3  mean perf 0.0116
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.1838
+  modules   0        mean perf 0.0411
+  modules   1        mean perf 0.0610
+  modules   2        mean perf 0.0811
+  modules   3        mean perf 0.1493
+  modules   0,1      mean perf 0.0561
+  modules   0,2      mean perf 0.0193
+  modules   0,3      mean perf 0.0412
+  modules   1,2      mean perf 0.0219
+  modules   1,3      mean perf 0.0201
+  modules   2,3      mean perf 0.0813
+  modules   0,1,2    mean perf 0.0188
+  modules   0,1,3    mean perf 0.0174
+  modules   0,2,3    mean perf 0.0159
+  modules   1,2,3    mean perf 0.0177
+  top_conn  1-2      mean perf 0.1184
+  pair_conn 0-1,2-3  mean perf 0.0439
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.2280
+  modules   0        mean perf 0.0524
+  modules   1        mean perf 0.0169
+  modules   2        mean perf 0.0233
+  modules   3        mean perf 0.0801
+  modules   0,1      mean perf 0.0165
+  modules   0,2      mean perf 0.0024
+  modules   0,3      mean perf 0.0114
+  modules   1,2      mean perf 0.0024
+  modules   1,3      mean perf 0.0024
+  modules   2,3      mean perf 0.0216
+  modules   0,1,2    mean perf 0.0023
+  modules   0,1,3    mean perf 0.0023
+  modules   0,2,3    mean perf 0.0022
+  modules   1,2,3    mean perf 0.0022
+  top_conn  1-2      mean perf 0.0572
+  pair_conn 0-1,2-3  mean perf 0.0123
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.2825
+  modules   0        mean perf 0.0755
+  modules   1        mean perf 0.0144
+  modules   2        mean perf 0.0267
+  modules   3        mean perf 0.0994
+  modules   0,1      mean perf 0.0165
+  modules   0,2      mean perf 0.0021
+  modules   0,3      mean perf 0.0098
+  modules   1,2      mean perf 0.0024
+  modules   1,3      mean perf 0.0023
+  modules   2,3      mean perf 0.0259
+  modules   0,1,2    mean perf 0.0023
+  modules   0,1,3    mean perf 0.0022
+  modules   0,2,3    mean perf 0.0018
+  modules   1,2,3    mean perf 0.0021
+  top_conn  1-2      mean perf 0.0652
+  pair_conn 0-1,2-3  mean perf 0.0101
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_central_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/step_down.npy...
+n_ground_segs: 4
+Robot states loaded...
+Initializing weights...
+  modules            mean perf 0.2916
+  modules   0        mean perf 0.0767
+  modules   1        mean perf 0.0145
+  modules   2        mean perf 0.0270
+  modules   3        mean perf 0.1024
+  modules   0,1      mean perf 0.0166
+  modules   0,2      mean perf 0.0021
+  modules   0,3      mean perf 0.0114
+  modules   1,2      mean perf 0.0022
+  modules   1,3      mean perf 0.0021
+  modules   2,3      mean perf 0.0260
+  modules   0,1,2    mean perf 0.0022
+  modules   0,1,3    mean perf 0.0021
+  modules   0,2,3    mean perf 0.0018
+  modules   1,2,3    mean perf 0.0019
+  top_conn  1-2      mean perf 0.0665
+  pair_conn 0-1,2-3  mean perf 0.0116
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2485
+  modules   0        mean perf 0.1231
+  modules   1        mean perf 0.1221
+  modules   2        mean perf 0.0420
+  modules   3        mean perf 0.0627
+  modules   0,1      mean perf 0.0573
+  modules   0,2      mean perf 0.0172
+  modules   0,3      mean perf 0.0264
+  modules   1,2      mean perf 0.0120
+  modules   1,3      mean perf 0.0134
+  modules   2,3      mean perf 0.0050
+  modules   0,1,2    mean perf 0.0036
+  modules   0,1,3    mean perf 0.0055
+  modules   0,2,3    mean perf 0.0042
+  modules   1,2,3    mean perf 0.0028
+  top_conn  1-2      mean perf 0.2093
+  pair_conn 0-1,2-3  mean perf 0.0589
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2524
+  modules   0        mean perf 0.1736
+  modules   1        mean perf 0.1748
+  modules   2        mean perf 0.0654
+  modules   3        mean perf 0.1217
+  modules   0,1      mean perf 0.1601
+  modules   0,2      mean perf 0.0364
+  modules   0,3      mean perf 0.0670
+  modules   1,2      mean perf 0.0377
+  modules   1,3      mean perf 0.0434
+  modules   2,3      mean perf 0.0620
+  modules   0,1,2    mean perf 0.0218
+  modules   0,1,3    mean perf 0.0218
+  modules   0,2,3    mean perf 0.0307
+  modules   1,2,3    mean perf 0.0358
+  top_conn  1-2      mean perf 0.1893
+  pair_conn 0-1,2-3  mean perf 0.1127
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2033
+  modules   0        mean perf 0.1301
+  modules   1        mean perf 0.1064
+  modules   2        mean perf 0.0428
+  modules   3        mean perf 0.0731
+  modules   0,1      mean perf 0.0687
+  modules   0,2      mean perf 0.0213
+  modules   0,3      mean perf 0.0336
+  modules   1,2      mean perf 0.0128
+  modules   1,3      mean perf 0.0146
+  modules   2,3      mean perf 0.0135
+  modules   0,1,2    mean perf 0.0073
+  modules   0,1,3    mean perf 0.0089
+  modules   0,2,3    mean perf 0.0067
+  modules   1,2,3    mean perf 0.0032
+  top_conn  1-2      mean perf 0.1538
+  pair_conn 0-1,2-3  mean perf 0.0594
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2213
+  modules   0        mean perf 0.1081
+  modules   1        mean perf 0.1042
+  modules   2        mean perf 0.0424
+  modules   3        mean perf 0.0629
+  modules   0,1      mean perf 0.0506
+  modules   0,2      mean perf 0.0116
+  modules   0,3      mean perf 0.0229
+  modules   1,2      mean perf 0.0118
+  modules   1,3      mean perf 0.0130
+  modules   2,3      mean perf 0.0048
+  modules   0,1,2    mean perf 0.0036
+  modules   0,1,3    mean perf 0.0055
+  modules   0,2,3    mean perf 0.0035
+  modules   1,2,3    mean perf 0.0030
+  top_conn  1-2      mean perf 0.2014
+  pair_conn 0-1,2-3  mean perf 0.0506
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/step_down.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2360
+  modules   0        mean perf 0.1264
+  modules   1        mean perf 0.1170
+  modules   2        mean perf 0.0417
+  modules   3        mean perf 0.0604
+  modules   0,1      mean perf 0.0566
+  modules   0,2      mean perf 0.0173
+  modules   0,3      mean perf 0.0264
+  modules   1,2      mean perf 0.0120
+  modules   1,3      mean perf 0.0135
+  modules   2,3      mean perf 0.0051
+  modules   0,1,2    mean perf 0.0036
+  modules   0,1,3    mean perf 0.0056
+  modules   0,2,3    mean perf 0.0042
+  modules   1,2,3    mean perf 0.0028
+  top_conn  1-2      mean perf 0.1927
+  pair_conn 0-1,2-3  mean perf 0.0581
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2837
+  modules   0        mean perf 0.1439
+  modules   1        mean perf 0.1139
+  modules   2        mean perf 0.0483
+  modules   3        mean perf 0.0841
+  modules   0,1      mean perf 0.0631
+  modules   0,2      mean perf 0.0171
+  modules   0,3      mean perf 0.0300
+  modules   1,2      mean perf 0.0123
+  modules   1,3      mean perf 0.0134
+  modules   2,3      mean perf 0.0158
+  modules   0,1,2    mean perf 0.0036
+  modules   0,1,3    mean perf 0.0055
+  modules   0,2,3    mean perf 0.0042
+  modules   1,2,3    mean perf 0.0028
+  top_conn  1-2      mean perf 0.2639
+  pair_conn 0-1,2-3  mean perf 0.0638
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env wind...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2637
+  modules   0        mean perf 0.1963
+  modules   1        mean perf 0.1581
+  modules   2        mean perf 0.0927
+  modules   3        mean perf 0.1430
+  modules   0,1      mean perf 0.1702
+  modules   0,2      mean perf 0.0369
+  modules   0,3      mean perf 0.0826
+  modules   1,2      mean perf 0.0374
+  modules   1,3      mean perf 0.0438
+  modules   2,3      mean perf 0.0966
+  modules   0,1,2    mean perf 0.0194
+  modules   0,1,3    mean perf 0.0215
+  modules   0,2,3    mean perf 0.0307
+  modules   1,2,3    mean perf 0.0357
+  top_conn  1-2      mean perf 0.2116
+  pair_conn 0-1,2-3  mean perf 0.1131
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env sand...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2445
+  modules   0        mean perf 0.1362
+  modules   1        mean perf 0.1182
+  modules   2        mean perf 0.0498
+  modules   3        mean perf 0.0781
+  modules   0,1      mean perf 0.0737
+  modules   0,2      mean perf 0.0214
+  modules   0,3      mean perf 0.0386
+  modules   1,2      mean perf 0.0129
+  modules   1,3      mean perf 0.0145
+  modules   2,3      mean perf 0.0211
+  modules   0,1,2    mean perf 0.0073
+  modules   0,1,3    mean perf 0.0089
+  modules   0,2,3    mean perf 0.0067
+  modules   1,2,3    mean perf 0.0032
+  top_conn  1-2      mean perf 0.1906
+  pair_conn 0-1,2-3  mean perf 0.0628
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/slope_up.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2594
+  modules   0        mean perf 0.1177
+  modules   1        mean perf 0.1011
+  modules   2        mean perf 0.0492
+  modules   3        mean perf 0.0777
+  modules   0,1      mean perf 0.0507
+  modules   0,2      mean perf 0.0116
+  modules   0,3      mean perf 0.0271
+  modules   1,2      mean perf 0.0121
+  modules   1,3      mean perf 0.0130
+  modules   2,3      mean perf 0.0152
+  modules   0,1,2    mean perf 0.0036
+  modules   0,1,3    mean perf 0.0055
+  modules   0,2,3    mean perf 0.0035
+  modules   1,2,3    mean perf 0.0030
+  top_conn  1-2      mean perf 0.2132
+  pair_conn 0-1,2-3  mean perf 0.0585
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/test_multilevel_comm_2.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Loading terrain from /Users/eli/Documents/GitHub/DivColl/terrains/step_down.npy...
+n_ground_segs: 4
+Robot states loaded...
+Loading provided weights...
+  modules            mean perf 0.2568
+  modules   0        mean perf 0.1404
+  modules   1        mean perf 0.1131
+  modules   2        mean perf 0.0465
+  modules   3        mean perf 0.0837
+  modules   0,1      mean perf 0.0630
+  modules   0,2      mean perf 0.0171
+  modules   0,3      mean perf 0.0299
+  modules   1,2      mean perf 0.0122
+  modules   1,3      mean perf 0.0134
+  modules   2,3      mean perf 0.0157
+  modules   0,1,2    mean perf 0.0036
+  modules   0,1,3    mean perf 0.0055
+  modules   0,2,3    mean perf 0.0042
+  modules   1,2,3    mean perf 0.0028
+  top_conn  1-2      mean perf 0.2552
+  pair_conn 0-1,2-3  mean perf 0.0645
+[Taichi] version 1.7.2, llvm 15.0.7, commit 0131dce9, osx, python 3.10.13
+[Taichi] Starting on arch=metal
+Setting env None...
+Loading robots [0, 12) into Taichi from /Users/eli/Documents/GitHub/DivColl/experiments/scratch/v2/train_central_3.pkl...
+num robots: 12, max num points: 44, max num springs: 99
+Using flat terrain...
+n_ground_segs: 3
+Robot states loaded...
+Initializing weights...
+/Users/eli/Documents/GitHub/DivColl/experiments/../experiments/levels_lib.py:198: RuntimeWarning: Mean of empty slice.
+  log(f"  iter {k:3d} perf mean {-L[~bad].mean():.4f}  min {-L[~bad].max():.4f}  max {-L[~bad].min():.4f}")
+/Users/eli/Documents/GitHub/DivColl/.venv/lib/python3.10/site-packages/numpy/core/_methods.py:129: RuntimeWarning: invalid value encountered in divide
+  ret = ret.dtype.type(ret / rcount)
+  iter   0 perf mean 0.0030  min -0.0605  max 0.0435
+  iter  10 perf mean 0.0505  min 0.0061  max 0.0976
+Traceback (most recent call last):
+  File "/Users/eli/Documents/GitHub/DivColl/experiments/run_levels.py", line 104, in <module>
+    {"train": worker_train, "eval": worker_eval, "all": orchestrate}[a.mode](a)
+  File "/Users/eli/Documents/GitHub/DivColl/experiments/run_levels.py", line 46, in worker_train
+    snap, hist = train(S, a.cond, a.iters)
+  File "/Users/eli/Documents/GitHub/DivColl/experiments/../experiments/levels_lib.py", line 198, in train
+    log(f"  iter {k:3d} perf mean {-L[~bad].mean():.4f}  min {-L[~bad].max():.4f}  max {-L[~bad].min():.4f}")
+  File "/Users/eli/Documents/GitHub/DivColl/.venv/lib/python3.10/site-packages/numpy/core/_methods.py", line 41, in _amax
+    return umr_maximum(a, axis, None, out, keepdims, initial, where)
+ValueError: zero-size array to reduction operation maximum which has no identity
+Traceback (most recent call last):
+  File "/Users/eli/Documents/GitHub/DivColl/experiments/run_levels.py", line 104, in <module>
+    {"train": worker_train, "eval": worker_eval, "all": orchestrate}[a.mode](a)
+  File "/Users/eli/Documents/GitHub/DivColl/experiments/run_levels.py", line 83, in orchestrate
+    run_worker(["train", "--cond", cond, "--seed", seed, "--iters", a.iters] + common)
+  File "/Users/eli/Documents/GitHub/DivColl/experiments/run_levels.py", line 74, in run_worker
+    raise RuntimeError(f"worker failed: {' '.join(cmd)}")
+RuntimeError: worker failed: /Users/eli/Documents/GitHub/DivColl/.venv/bin/python /Users/eli/Documents/GitHub/DivColl/experiments/run_levels.py train --cond central --seed 3 --iters 60 --tag v2 --steps 1000 --n_groups 12 --clip 0.08

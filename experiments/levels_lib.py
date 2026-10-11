@@ -1,4 +1,4 @@
-"""Shared code for the three-level robot experiment (flat vs multi-level vs multi-level + communication).
+"""Shared code for the three-level robot experiment (central vs multi-level vs multi-level + communication).
 
 Every worker process must be started from the repo root (sim.py uses repo-relative imports) and calls
 ti.init exactly once, so training and each evaluation environment run in separate processes.
@@ -22,8 +22,14 @@ EDGES = [(0, 1), (1, 2), (2, 3)]          # (0,1),(2,3) are level-2 links, (1,2)
 CONN_STIFFNESS, CONN_ACT = 2000, 0.6
 BOT_DIR = os.path.join(ROOT, "outputs", "og_bots")
 ANCHOR_CSV = os.path.join(ROOT, "experiments", "data", "conn_points.csv")
-CONDITIONS = ["flat", "multi", "multi_comm"]
-ENVS = ["in_dist", "wind", "sand", "slope_up", "low_gravity"]
+CONDITIONS = ["central", "multilevel", "multilevel_comm"]
+P2_CONDITIONS = ["multilevel_joint", "multilevel_comm_joint"]   # agent MLPs unfrozen (P2)
+ENVS = ["in_dist", "wind", "sand", "slope_up", "step_down"]     # step_down kept only if it passes the PLAN.md rule
+
+
+def is_central(c): return c == "central"
+def has_comm(c): return "comm" in c
+def is_joint(c): return c.endswith("_joint")
 TERRAIN_ENVS = ["slope_down", "obs", "slope_up", "gap", "step_down", "step_up"]
 
 
@@ -53,8 +59,8 @@ def make_anchor_csv(n_bots=100):
 
 
 def build_robot(ids, kind, anchors):
-    """kind='multi': 4 agents with own MLPs + connector springs (negative s_id).
-    kind='flat': identical bodies and springs, but all springs/points owned by ONE sub-bot (single MLP).
+    """kind='multilevel': 4 agents with own MLPs + connector springs (negative s_id).
+    kind='central': identical bodies and springs, but all springs/points owned by ONE sub-bot (single MLP).
     Returns the robot dict and `owner` (agent index per spring; connector springs of edge e get -1-e)."""
     pts, spr, s_id, p_id, weights, owner = [], [], [], [], [], []
     bots = [load_bot(i) for i in ids]
@@ -81,7 +87,7 @@ def build_robot(ids, kind, anchors):
             s_id.append(-(front + 1))
             owner.append(-1 - e)
     robot = dict(points=pts, springs=spr, weights=weights, ids=list(ids))
-    if kind == "multi":
+    if kind == "multilevel":
         robot.update(s_id=s_id, p_id=p_id)
     else:
         del robot["weights"]
@@ -129,8 +135,8 @@ def init_sim(bundle_path, env, condition, steps, conn_file=None, seed=0, clip=No
     if clip is not None:
         S.gradient_clip = clip  # normalized-gradient step size, baked in when kernels first compile
     ground, cond = env_files(env)
-    S.comm_enabled = condition == "multi_comm"
-    S.env_setup(cond, steps, 1 if condition == "flat" else N_AGENTS)
+    S.comm_enabled = has_comm(condition)
+    S.env_setup(cond, steps, 1 if is_central(condition) else N_AGENTS)
     S.setup(bundle_path, ground, conn_file)
     if S.comm_enabled:
         S.init_comm(seed)
@@ -138,10 +144,13 @@ def init_sim(bundle_path, env, condition, steps, conn_file=None, seed=0, clip=No
 
 
 def trainable(S, condition):
-    if condition == "flat":
-        return ["weights1", "bias1", "weights2", "bias2"]
+    agent = ["weights1", "bias1", "weights2", "bias2"]
+    if is_central(condition):
+        return agent
     names = ["conn_weights1", "conn_bias1", "conn_weights2", "conn_bias2"]
-    if condition == "multi_comm":
+    if is_joint(condition):
+        names += agent
+    if has_comm(condition):
         names += ["comm_in", "comm_w2", "comm_b2", "comm_w3", "comm_b3"]
     return names
 
@@ -156,13 +165,15 @@ def restore(S, snap):
 
 
 def train(S, condition, iters, log=print):
-    """Gradient training of the condition's trainable parameters (agent MLPs frozen for multi/multi_comm).
-    flat: per-robot weights, best iterate kept per robot.  multi*: shared parameters, best mean loss kept.
+    """Gradient training of the condition's trainable parameters (agent MLPs frozen for multilevel/multilevel_comm).
+    central: per-robot weights, best iterate kept per robot.  multilevel*: shared parameters, best mean loss kept
+    (the *_joint variants also train the per-robot agent MLPs, with the best mean-loss iterate kept as a whole).
     Returns (snapshot of best parameters, loss history array [iters+1, n_robots])."""
     names = trainable(S, condition)
     R = S.n_robots
     hist = np.full((iters + 1, R), np.nan)
-    best = np.full(R, np.inf) if condition == "flat" else np.inf
+    per_robot = is_central(condition)
+    best = np.full(R, np.inf) if per_robot else np.inf
     snap = snapshot(S, names)
     for k in range(iters + 1):
         S.clear()
@@ -170,7 +181,7 @@ def train(S, condition, iters, log=print):
         L = S.loss.to_numpy()
         hist[k] = L
         bad = ~np.isfinite(L)
-        if condition == "flat":
+        if per_robot:
             better = (L < best) & ~bad
             if better.any():
                 cur = snapshot(S, names)
@@ -184,42 +195,56 @@ def train(S, condition, iters, log=print):
             if L.mean() < best:
                 best, snap = L.mean(), snapshot(S, names)
         if k % 10 == 0 or k == iters:
-            log(f"  iter {k:3d} perf mean {-L[~bad].mean():.4f}  min {-L[~bad].max():.4f}  max {-L[~bad].min():.4f}")
+            if bad.all():
+                log(f"  iter {k:3d} ALL {R} robots non-finite")
+            else:
+                log(f"  iter {k:3d} perf mean {-L[~bad].mean():.4f}  min {-L[~bad].max():.4f}  max {-L[~bad].min():.4f}"
+                    f"  non-finite {bad.sum()}/{R}")
         if k == iters:
             break
         S.loss.grad.fill(1.0)
         S.manual_backward()
-        if condition == "flat":
+        if per_robot or is_joint(condition):
             S.update_weights()
-        else:
+        if not per_robot:
             S.update_weights_conn()
-            if condition == "multi_comm":
+            if has_comm(condition):
                 S.update_weights_comm()
     return snap, hist
 
 
-def ablation_sets(n=N_AGENTS, max_k=N_AGENTS):
+def ablation_sets(n=N_AGENTS, max_k=N_AGENTS - 1):
     return [c for k in range(max_k + 1) for c in itertools.combinations(range(n), k)]
 
 
+def lesion_plan():
+    """(lesion, label, agents_disabled, connector_edges_disabled). Module lesions disable agent k's springs and every
+    connector touching it. Connector lesions (P1) zero ONLY the named connector springs; agents stay active."""
+    plan = []
+    for sil in ablation_sets():
+        edges = [e for e, ends in enumerate(EDGES) if set(ends) & set(sil)]
+        plan.append(("modules", ",".join(map(str, sil)), len(sil), list(sil), edges))
+    plan.append(("top_conn", "1-2", 0, [], [1]))             # level-3 link between the two pairs
+    plan.append(("pair_conn", "0-1,2-3", 0, [], [0, 2]))     # both level-2 (within-pair) links
+    return plan
+
+
 def evaluate(S, owner, log=print):
-    """Per-robot performance (mean x displacement of all points) for every disabled-module subset.
-    Disabling module k = zero actuation amplitude on agent k's springs AND on every connector touching agent k
-    (the bodies stay as passive masses). k=4 disables everything: the passive floor."""
+    """Per-robot performance (mean x displacement of all points) for every lesion in lesion_plan().
+    Lesioning = zero actuation amplitude on the chosen springs (bodies stay as passive masses)."""
     base = S.spring_actuation.to_numpy()
     rows = []
     owner_pad = np.full(base.shape, -9)
     for r, o in enumerate(owner):
         owner_pad[r, :len(o)] = o
-    for sil in ablation_sets():
+    for lesion, label, k, agents, edges in lesion_plan():
         a = base.copy()
-        dead_owner = list(sil) + [-1 - e for e, ends in enumerate(EDGES) if set(ends) & set(sil)]
-        a[np.isin(owner_pad, dead_owner)] = 0.0
+        a[np.isin(owner_pad, list(agents) + [-1 - e for e in edges])] = 0.0
         S.spring_actuation.from_numpy(a)
         S.clear()
         S.forward()
         perf = -S.loss.to_numpy()
-        rows.append((sil, perf))
-        log(f"  disabled {sil!s:14} mean perf {np.nanmean(perf):.4f}")
+        rows.append((lesion, label, k, perf))
+        log(f"  {lesion:9s} {label:8s} mean perf {np.nanmean(perf):.4f}")
     S.spring_actuation.from_numpy(base)
     return rows
